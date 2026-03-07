@@ -16,7 +16,7 @@ namespace student_ms
         {
             InitializeComponent();
 
-            Load += AddStudent_Load;
+           this.Load += AddStudent_Load;
 
             foreach (Control ctrl in this.Controls)
             {
@@ -52,7 +52,7 @@ namespace student_ms
 
         private void Dash_btn_Click(object sender, EventArgs e)
         {
-            this.Owner.Show();
+            this.Close();
         }
     }
 }

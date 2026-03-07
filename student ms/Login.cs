@@ -28,8 +28,9 @@ namespace student_ms
         {
              Dashboard dash = new Dashboard();
              dash.Owner= this;
-            dash.Show();
-            
+             dash.Show();
+            this.Hide();
+
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)

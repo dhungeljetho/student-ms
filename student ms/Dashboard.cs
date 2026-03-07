@@ -15,6 +15,8 @@ namespace student_ms
         public Dashboard()
         {
             InitializeComponent();
+
+            this.Load += Dashboard_Load;
             //foreach (Control ctrl in this.Controls)
             //{
             //    if (ctrl is Button btn)
@@ -59,19 +61,23 @@ namespace student_ms
         private void Addbtn_Click(object sender, EventArgs e)
         {
             var add = new AddStudent();
-            add.Owner = this;
             this.Hide();
             add.ShowDialog();
-            
+            this.Show();
+
         }
 
        
 
         private void Logoutbtn_Click(object sender, EventArgs e)
         {
-            this.Owner.Show();
-            this.Close();
+            if (this.Owner != null)
+            {
+                this.Owner.Show(); 
+                this.Close();      
+            }
         }
 
+      
     }
 }
