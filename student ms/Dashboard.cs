@@ -52,7 +52,7 @@ namespace student_ms
 
             Viewbtn.Click += Viewbtn_Click; ;
 
-            //Updatebtn.Click += Updatebtn_Click;
+            Updatebtn.Click += Updatebtn_Click;
 
             Deletebtn.Click += Deletebtn_Click;
 
@@ -92,6 +92,15 @@ namespace student_ms
             del.Owner = this;
             this.Hide();
             del.ShowDialog();
+            this.Show();
+        }
+
+        private void Updatebtn_Click(object sender, EventArgs e)
+        {
+            var update = new Updaterecord();
+            update.Owner = this;
+            this.Hide();
+            update.ShowDialog();
             this.Show();
         }
 
