@@ -7,17 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySqlConnector;
+
 
 namespace student_ms
 {
     public partial class AddStudent : Form
     {
+
+        //Database connection
+        private string connString = "Server=127.0.0.1;Port=3306;User ID=root;Password=;Database=Student_ms;";
+
         public AddStudent()
         {
             InitializeComponent();
 
            this.Load += AddStudent_Load;
 
+            //mouse movement
             //foreach (Control ctrl in this.Controls)
             //{
             //    if (ctrl is Button btn)

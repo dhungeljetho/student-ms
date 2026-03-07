@@ -53,7 +53,7 @@
             this.textBox3.Location = new System.Drawing.Point(236, 241);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(235, 29);
-            this.textBox3.TabIndex = 56;
+            this.textBox3.TabIndex = 1;
             // 
             // Password
             // 
@@ -71,7 +71,7 @@
             this.textBox1.Location = new System.Drawing.Point(236, 195);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(235, 29);
-            this.textBox1.TabIndex = 54;
+            this.textBox1.TabIndex = 0;
             // 
             // UserName
             // 
@@ -90,13 +90,13 @@
             this.loginbtn.Location = new System.Drawing.Point(292, 313);
             this.loginbtn.Name = "loginbtn";
             this.loginbtn.Size = new System.Drawing.Size(118, 35);
-            this.loginbtn.TabIndex = 52;
+            this.loginbtn.TabIndex = 2;
             this.loginbtn.Text = "Login";
             this.loginbtn.UseVisualStyleBackColor = false;
-          
             // 
-            // Form1
+            // Login
             // 
+            this.AcceptButton = this.loginbtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
@@ -106,7 +106,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.UserName);
             this.Controls.Add(this.loginbtn);
-            this.Name = "Form1";
+            this.Name = "Login";
             this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.ResumeLayout(false);

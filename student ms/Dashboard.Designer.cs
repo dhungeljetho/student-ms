@@ -72,7 +72,7 @@
             this.Attenbtn.Location = new System.Drawing.Point(21, 121);
             this.Attenbtn.Name = "Attenbtn";
             this.Attenbtn.Size = new System.Drawing.Size(123, 35);
-            this.Attenbtn.TabIndex = 61;
+            this.Attenbtn.TabIndex = 4;
             this.Attenbtn.Text = "Attendance";
             this.Attenbtn.UseVisualStyleBackColor = false;
             // 
@@ -83,7 +83,7 @@
             this.Logoutbtn.Location = new System.Drawing.Point(21, 369);
             this.Logoutbtn.Name = "Logoutbtn";
             this.Logoutbtn.Size = new System.Drawing.Size(123, 35);
-            this.Logoutbtn.TabIndex = 60;
+            this.Logoutbtn.TabIndex = 10;
             this.Logoutbtn.Text = "Logout";
             this.Logoutbtn.UseVisualStyleBackColor = false;
             // 
@@ -94,7 +94,7 @@
             this.Paymentbtn.Location = new System.Drawing.Point(21, 328);
             this.Paymentbtn.Name = "Paymentbtn";
             this.Paymentbtn.Size = new System.Drawing.Size(123, 35);
-            this.Paymentbtn.TabIndex = 59;
+            this.Paymentbtn.TabIndex = 9;
             this.Paymentbtn.Text = "Payment";
             this.Paymentbtn.UseVisualStyleBackColor = false;
             // 
@@ -105,7 +105,7 @@
             this.Deletebtn.Location = new System.Drawing.Point(21, 287);
             this.Deletebtn.Name = "Deletebtn";
             this.Deletebtn.Size = new System.Drawing.Size(123, 35);
-            this.Deletebtn.TabIndex = 58;
+            this.Deletebtn.TabIndex = 8;
             this.Deletebtn.Text = "Delete Record";
             this.Deletebtn.UseVisualStyleBackColor = false;
             // 
@@ -116,7 +116,7 @@
             this.Updatebtn.Location = new System.Drawing.Point(21, 244);
             this.Updatebtn.Name = "Updatebtn";
             this.Updatebtn.Size = new System.Drawing.Size(123, 35);
-            this.Updatebtn.TabIndex = 57;
+            this.Updatebtn.TabIndex = 7;
             this.Updatebtn.Text = "Update Record";
             this.Updatebtn.UseVisualStyleBackColor = false;
             // 
@@ -127,7 +127,7 @@
             this.Viewbtn.Location = new System.Drawing.Point(21, 203);
             this.Viewbtn.Name = "Viewbtn";
             this.Viewbtn.Size = new System.Drawing.Size(123, 35);
-            this.Viewbtn.TabIndex = 56;
+            this.Viewbtn.TabIndex = 6;
             this.Viewbtn.Text = "View Record";
             this.Viewbtn.UseVisualStyleBackColor = false;
             // 
@@ -138,7 +138,7 @@
             this.Addbtn.Location = new System.Drawing.Point(21, 162);
             this.Addbtn.Name = "Addbtn";
             this.Addbtn.Size = new System.Drawing.Size(123, 35);
-            this.Addbtn.TabIndex = 55;
+            this.Addbtn.TabIndex = 5;
             this.Addbtn.Text = "Add Record";
             this.Addbtn.UseVisualStyleBackColor = false;
             // 
@@ -149,7 +149,7 @@
             this.Dabtn.Location = new System.Drawing.Point(21, 80);
             this.Dabtn.Name = "Dabtn";
             this.Dabtn.Size = new System.Drawing.Size(123, 35);
-            this.Dabtn.TabIndex = 54;
+            this.Dabtn.TabIndex = 3;
             this.Dabtn.Text = "Dashboard";
             this.Dabtn.UseVisualStyleBackColor = false;
             // 

@@ -93,7 +93,7 @@
             this.label14.Location = new System.Drawing.Point(191, 293);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(145, 22);
-            this.label14.TabIndex = 115;
+            this.label14.TabIndex = 14;
             this.label14.Text = "Parent\'s Details:";
             // 
             // textBox1
@@ -321,7 +321,7 @@
             this.textBox10.Location = new System.Drawing.Point(340, 145);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(155, 29);
-            this.textBox10.TabIndex = 149;
+            this.textBox10.TabIndex = 18;
             // 
             // label16
             // 
@@ -341,7 +341,7 @@
             this.label17.Location = new System.Drawing.Point(191, 71);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(152, 25);
-            this.label17.TabIndex = 147;
+            this.label17.TabIndex = 0;
             this.label17.Text = "Personal Details";
             // 
             // label18
@@ -390,15 +390,15 @@
             this.textBox11.Location = new System.Drawing.Point(342, 364);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(153, 29);
-            this.textBox11.TabIndex = 142;
+            this.textBox11.TabIndex = 26;
             // 
             // textBox12
             // 
             this.textBox12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox12.Location = new System.Drawing.Point(638, 327);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 29);
-            this.textBox12.TabIndex = 141;
+            this.textBox12.Size = new System.Drawing.Size(123, 29);
+            this.textBox12.TabIndex = 25;
             // 
             // textBox13
             // 
@@ -406,7 +406,7 @@
             this.textBox13.Location = new System.Drawing.Point(340, 215);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(155, 29);
-            this.textBox13.TabIndex = 140;
+            this.textBox13.TabIndex = 21;
             // 
             // radioButton3
             // 
@@ -415,7 +415,7 @@
             this.radioButton3.Location = new System.Drawing.Point(663, 148);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(62, 25);
-            this.radioButton3.TabIndex = 137;
+            this.radioButton3.TabIndex = 20;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Male";
             this.radioButton3.UseVisualStyleBackColor = true;
@@ -477,7 +477,7 @@
             this.textBox14.Location = new System.Drawing.Point(340, 252);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(117, 29);
-            this.textBox14.TabIndex = 130;
+            this.textBox14.TabIndex = 23;
             // 
             // textBox15
             // 
@@ -485,7 +485,7 @@
             this.textBox15.Location = new System.Drawing.Point(340, 111);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(155, 29);
-            this.textBox15.TabIndex = 129;
+            this.textBox15.TabIndex = 16;
             // 
             // radioButton4
             // 
@@ -494,7 +494,7 @@
             this.radioButton4.Location = new System.Drawing.Point(587, 148);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(78, 25);
-            this.radioButton4.TabIndex = 131;
+            this.radioButton4.TabIndex = 19;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Female";
             this.radioButton4.UseVisualStyleBackColor = true;
@@ -505,7 +505,7 @@
             this.textBox16.Location = new System.Drawing.Point(591, 212);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(127, 29);
-            this.textBox16.TabIndex = 128;
+            this.textBox16.TabIndex = 22;
             // 
             // textBox17
             // 
@@ -513,7 +513,7 @@
             this.textBox17.Location = new System.Drawing.Point(340, 329);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(155, 29);
-            this.textBox17.TabIndex = 127;
+            this.textBox17.TabIndex = 24;
             // 
             // textBox18
             // 
@@ -521,7 +521,7 @@
             this.textBox18.Location = new System.Drawing.Point(591, 111);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(127, 29);
-            this.textBox18.TabIndex = 126;
+            this.textBox18.TabIndex = 17;
             // 
             // label27
             // 
@@ -540,7 +540,7 @@
             this.Delete_btn.Location = new System.Drawing.Point(28, 273);
             this.Delete_btn.Name = "Delete_btn";
             this.Delete_btn.Size = new System.Drawing.Size(123, 35);
-            this.Delete_btn.TabIndex = 121;
+            this.Delete_btn.TabIndex = 15;
             this.Delete_btn.Text = "Delete Record";
             this.Delete_btn.UseVisualStyleBackColor = false;
             // 
@@ -551,7 +551,7 @@
             this.Update_btn.Location = new System.Drawing.Point(28, 230);
             this.Update_btn.Name = "Update_btn";
             this.Update_btn.Size = new System.Drawing.Size(123, 35);
-            this.Update_btn.TabIndex = 120;
+            this.Update_btn.TabIndex = 14;
             this.Update_btn.Text = "Update Record";
             this.Update_btn.UseVisualStyleBackColor = false;
             // 
@@ -562,7 +562,7 @@
             this.View_btn.Location = new System.Drawing.Point(28, 189);
             this.View_btn.Name = "View_btn";
             this.View_btn.Size = new System.Drawing.Size(123, 35);
-            this.View_btn.TabIndex = 119;
+            this.View_btn.TabIndex = 13;
             this.View_btn.Text = "View Record";
             this.View_btn.UseVisualStyleBackColor = false;
             // 
@@ -573,7 +573,7 @@
             this.Add_btn.Location = new System.Drawing.Point(28, 148);
             this.Add_btn.Name = "Add_btn";
             this.Add_btn.Size = new System.Drawing.Size(123, 35);
-            this.Add_btn.TabIndex = 118;
+            this.Add_btn.TabIndex = 12;
             this.Add_btn.Text = "Add Record";
             this.Add_btn.UseVisualStyleBackColor = false;
             // 
@@ -584,7 +584,7 @@
             this.Dash_btn.Location = new System.Drawing.Point(28, 106);
             this.Dash_btn.Name = "Dash_btn";
             this.Dash_btn.Size = new System.Drawing.Size(123, 35);
-            this.Dash_btn.TabIndex = 117;
+            this.Dash_btn.TabIndex = 11;
             this.Dash_btn.Text = "Dashboard";
             this.Dash_btn.UseVisualStyleBackColor = false;
             // 
@@ -595,7 +595,7 @@
             this.Save_btn.Location = new System.Drawing.Point(484, 399);
             this.Save_btn.Name = "Save_btn";
             this.Save_btn.Size = new System.Drawing.Size(118, 35);
-            this.Save_btn.TabIndex = 139;
+            this.Save_btn.TabIndex = 27;
             this.Save_btn.Text = "Save";
             this.Save_btn.UseVisualStyleBackColor = false;
             // 
@@ -606,7 +606,7 @@
             this.Reset_btn.Location = new System.Drawing.Point(620, 399);
             this.Reset_btn.Name = "Reset_btn";
             this.Reset_btn.Size = new System.Drawing.Size(118, 35);
-            this.Reset_btn.TabIndex = 150;
+            this.Reset_btn.TabIndex = 28;
             this.Reset_btn.Text = "Reset";
             this.Reset_btn.UseVisualStyleBackColor = false;
             // 
