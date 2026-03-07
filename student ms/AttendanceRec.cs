@@ -15,6 +15,19 @@ namespace student_ms
         public AttendanceRec()
         {
             InitializeComponent();
+
+            this.Load += AttendanceRec_Load;
+        }
+
+        private void AttendanceRec_Load(object sender, EventArgs e)
+        {
+            Dabtn.Click += Dabtn_Click;
+        }
+
+        private void Dabtn_Click(object sender, EventArgs e)
+        {
+            this.Owner.Show();
+                this.Close();
         }
     }
 }

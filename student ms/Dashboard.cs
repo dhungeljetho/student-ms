@@ -56,6 +56,17 @@ namespace student_ms
 
             Deletebtn.Click += Deletebtn_Click;
 
+            Attenbtn.Click += Attenbtn_Click;
+
+        }
+
+        private void Attenbtn_Click(object sender, EventArgs e)
+        {
+            var attend = new AttendanceRec();
+            attend.Owner = this;
+            this.Hide();
+            attend.ShowDialog();
+            this.Show();
         }
 
         private void Viewbtn_Click(object sender, EventArgs e)
