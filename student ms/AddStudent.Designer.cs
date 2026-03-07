@@ -39,7 +39,6 @@
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -83,6 +82,7 @@
             this.Add_btn = new System.Windows.Forms.Button();
             this.Dash_btn = new System.Windows.Forms.Button();
             this.Save_btn = new System.Windows.Forms.Button();
+            this.Reset_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label14
@@ -184,17 +184,6 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(155, 20);
             this.textBox7.TabIndex = 105;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.GrayText;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(608, 396);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 35);
-            this.button1.TabIndex = 103;
-            this.button1.Text = "Reset";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // radioButton2
             // 
@@ -610,12 +599,24 @@
             this.Save_btn.Text = "Save";
             this.Save_btn.UseVisualStyleBackColor = false;
             // 
+            // Reset_btn
+            // 
+            this.Reset_btn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Reset_btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Reset_btn.Location = new System.Drawing.Point(620, 399);
+            this.Reset_btn.Name = "Reset_btn";
+            this.Reset_btn.Size = new System.Drawing.Size(118, 35);
+            this.Reset_btn.TabIndex = 150;
+            this.Reset_btn.Text = "Reset";
+            this.Reset_btn.UseVisualStyleBackColor = false;
+            // 
             // AddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Reset_btn);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label17);
@@ -656,7 +657,6 @@
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -691,7 +691,6 @@
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -735,5 +734,6 @@
         private System.Windows.Forms.Button Add_btn;
         private System.Windows.Forms.Button Dash_btn;
         private System.Windows.Forms.Button Save_btn;
+        private System.Windows.Forms.Button Reset_btn;
     }
 }

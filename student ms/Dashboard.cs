@@ -54,7 +54,7 @@ namespace student_ms
 
             //Updatebtn.Click += Updatebtn_Click;
 
-            //Deletebtn.Click += Deletebtn_Click;
+            Deletebtn.Click += Deletebtn_Click;
 
         }
 
@@ -68,8 +68,6 @@ namespace student_ms
 
         }
 
-       
-
         private void Logoutbtn_Click(object sender, EventArgs e)
         {
             if (this.Owner != null)
@@ -79,6 +77,15 @@ namespace student_ms
             }
         }
 
-      
+        private void Deletebtn_Click(object sender, EventArgs e)
+        {
+            var del = new Deleterec();
+            del.Owner = this;
+            this.Hide();
+            del.ShowDialog();
+            this.Show();
+        }
+
+
     }
 }
