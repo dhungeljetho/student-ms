@@ -17,45 +17,6 @@ namespace student_ms
             InitializeComponent();
         }
 
-        private void Dabtn_Click(object sender, EventArgs e)
-        {
-            var dash = new Dashboard();
-            this.Hide();
-            dash.ShowDialog();
-        }
-
-        private void Addbtn_Click(object sender, EventArgs e)
-        {
-            var newrec = new AddStudent();
-            this.Hide();
-            newrec.ShowDialog();
-        }
-
-        private void Viewbtn_Click_1(object sender, EventArgs e)
-        {
-            var view = new Viewrec();
-            this.Hide();
-            view.ShowDialog();
-        }
-
-        private void Updatebtn_Click_1(object sender, EventArgs e)
-        {
-            this.Show();
-        }
-
-        private void Deletebtn_Click(object sender, EventArgs e)
-        {
-            var delete = new Deleterec();
-            this.Hide();
-            delete.ShowDialog();
-        }
-
-        private void Logoutbtn_Click(object sender, EventArgs e)
-        {
-            var login1 = new Form1();
-            this.Hide();
-            login1.ShowDialog();
-        }
-
+       
     }
 }

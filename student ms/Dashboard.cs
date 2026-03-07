@@ -15,75 +15,63 @@ namespace student_ms
         public Dashboard()
         {
             InitializeComponent();
+            //foreach (Control ctrl in this.Controls)
+            //{
+            //    if (ctrl is Button btn)
+            //    {
+            //        btn.FlatStyle = FlatStyle.Flat;
+            //        btn.FlatAppearance.BorderSize = 0;
 
-            
-
-            foreach (Control ctrl in this.Controls)
-            {
-                if (ctrl is Button btn)
-                {
-                    btn.FlatStyle = FlatStyle.Flat;
-                    btn.FlatAppearance.BorderSize = 0;
-
-                    btn.MouseEnter += Button_MouseEnter;
-                    btn.MouseLeave += Button_MouseLeave;
-                }
-            }
+            //        btn.MouseEnter += Button_MouseEnter;
+            //        btn.MouseLeave += Button_MouseLeave;
+            //    }
+            //}
         }
 
-        private void Button_MouseEnter(object sender, EventArgs e)
-        {
-            Button btn = (Button)sender;
-            btn.BackColor = Color.SteelBlue;
-            btn.ForeColor = Color.White;
-        }
+        //private void Button_MouseEnter(object sender, EventArgs e)
+        //{
+        //    Button btn = (Button)sender;
+        //    btn.BackColor = Color.SteelBlue;
+        //    btn.ForeColor = Color.White;
+        //}
 
-        private void Button_MouseLeave(object sender, EventArgs e)
+        //private void Button_MouseLeave(object sender, EventArgs e)
+        //{
+        //    Button btn = (Button)sender;
+        //    btn.BackColor = SystemColors.Control;
+        //    btn.ForeColor = Color.Black;
+        //}
+        
+        private void Dashboard_Load(object sender, EventArgs e)
         {
-            Button btn = (Button)sender;
-            btn.BackColor = SystemColors.Control;
-            btn.ForeColor = Color.Black;
-        }
+            Addbtn.Click += Addbtn_Click;
 
+            Logoutbtn.Click += Logoutbtn_Click;
 
-        private void Logoutbtn_Click(object sender, EventArgs e)
-        {
-            var login1 = new Form1();
-            this.Hide();
-            login1.ShowDialog();
-            this.Show();
+            //Viewbtn.Click += Viewbtn_Click;
+
+            //Updatebtn.Click += Updatebtn_Click;
+
+            //Deletebtn.Click += Deletebtn_Click;
+
         }
 
         private void Addbtn_Click(object sender, EventArgs e)
         {
-            var newrec = new AddStudent();
+            var add = new AddStudent();
+            add.Owner = this;
             this.Hide();
-            newrec.ShowDialog();
-            this.Show();
+            add.ShowDialog();
+            
         }
 
-        private void Viewbtn_Click(object sender, EventArgs e)
+       
+
+        private void Logoutbtn_Click(object sender, EventArgs e)
         {
-            var view = new Viewrec();
-            this.Hide();
-            view.ShowDialog();
-            this.Show();
+            this.Owner.Show();
+            this.Close();
         }
 
-        private void Updatebtn_Click(object sender, EventArgs e)
-        {
-            var update = new Updaterecord();
-            this.Hide();
-            update.ShowDialog();
-            this.Show();
-        }
-
-        private void Deletebtn_Click(object sender, EventArgs e)
-        {
-            var delete = new Deleterec();
-            this.Hide();
-            delete.ShowDialog();
-            this.Show();
-        }
     }
 }

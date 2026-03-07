@@ -74,8 +74,8 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Save_btn = new System.Windows.Forms.Button();
+            this.Reset_btn = new System.Windows.Forms.Button();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -89,14 +89,14 @@
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.Attend_btn = new System.Windows.Forms.Button();
+            this.Logout_btn = new System.Windows.Forms.Button();
+            this.Payment_btn = new System.Windows.Forms.Button();
+            this.Delete_btn = new System.Windows.Forms.Button();
+            this.Update_btn = new System.Windows.Forms.Button();
+            this.View_btn = new System.Windows.Forms.Button();
+            this.Add_btn = new System.Windows.Forms.Button();
+            this.Dash_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label14
@@ -362,7 +362,6 @@
             this.Logoutbtn.TabIndex = 88;
             this.Logoutbtn.Text = "Logout";
             this.Logoutbtn.UseVisualStyleBackColor = false;
-            this.Logoutbtn.Click += new System.EventHandler(this.Logoutbtn_Click);
             // 
             // Paymentbtn
             // 
@@ -385,7 +384,6 @@
             this.Deletebtn.TabIndex = 86;
             this.Deletebtn.Text = "Delete Record";
             this.Deletebtn.UseVisualStyleBackColor = false;
-            this.Deletebtn.Click += new System.EventHandler(this.Deletebtn_Click);
             // 
             // Updatebtn
             // 
@@ -397,7 +395,6 @@
             this.Updatebtn.TabIndex = 85;
             this.Updatebtn.Text = "Update Record";
             this.Updatebtn.UseVisualStyleBackColor = false;
-            this.Updatebtn.Click += new System.EventHandler(this.Updatebtn_Click);
             // 
             // Viewbtn
             // 
@@ -409,7 +406,6 @@
             this.Viewbtn.TabIndex = 84;
             this.Viewbtn.Text = "View Record";
             this.Viewbtn.UseVisualStyleBackColor = false;
-            this.Viewbtn.Click += new System.EventHandler(this.Viewbtn_Click);
             // 
             // Addbtn
             // 
@@ -432,7 +428,6 @@
             this.Dabtn.TabIndex = 82;
             this.Dabtn.Text = "Dashboard";
             this.Dabtn.UseVisualStyleBackColor = false;
-            this.Dabtn.Click += new System.EventHandler(this.Dabtn_Click);
             // 
             // label1
             // 
@@ -488,7 +483,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(221, 256);
+            this.label18.Location = new System.Drawing.Point(220, 256);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(64, 21);
             this.label18.TabIndex = 146;
@@ -548,27 +543,27 @@
             this.textBox13.Size = new System.Drawing.Size(155, 29);
             this.textBox13.TabIndex = 140;
             // 
-            // button3
+            // Save_btn
             // 
-            this.button3.BackColor = System.Drawing.Color.Blue;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(479, 396);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(118, 35);
-            this.button3.TabIndex = 139;
-            this.button3.Text = "Save";
-            this.button3.UseVisualStyleBackColor = false;
+            this.Save_btn.BackColor = System.Drawing.Color.Chocolate;
+            this.Save_btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Save_btn.Location = new System.Drawing.Point(479, 396);
+            this.Save_btn.Name = "Save_btn";
+            this.Save_btn.Size = new System.Drawing.Size(118, 35);
+            this.Save_btn.TabIndex = 139;
+            this.Save_btn.Text = "Save";
+            this.Save_btn.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // Reset_btn
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.GrayText;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(607, 396);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(118, 35);
-            this.button4.TabIndex = 138;
-            this.button4.Text = "Reset";
-            this.button4.UseVisualStyleBackColor = false;
+            this.Reset_btn.BackColor = System.Drawing.SystemColors.GrayText;
+            this.Reset_btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Reset_btn.Location = new System.Drawing.Point(607, 396);
+            this.Reset_btn.Name = "Reset_btn";
+            this.Reset_btn.Size = new System.Drawing.Size(118, 35);
+            this.Reset_btn.TabIndex = 138;
+            this.Reset_btn.Text = "Reset";
+            this.Reset_btn.UseVisualStyleBackColor = false;
             // 
             // radioButton3
             // 
@@ -695,93 +690,93 @@
             this.label27.TabIndex = 125;
             this.label27.Text = "Student Number:";
             // 
-            // button5
+            // Attend_btn
             // 
-            this.button5.BackColor = System.Drawing.Color.Azure;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(24, 112);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(123, 35);
-            this.button5.TabIndex = 124;
-            this.button5.Text = "Attendance";
-            this.button5.UseVisualStyleBackColor = false;
+            this.Attend_btn.BackColor = System.Drawing.Color.Azure;
+            this.Attend_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Attend_btn.Location = new System.Drawing.Point(24, 112);
+            this.Attend_btn.Name = "Attend_btn";
+            this.Attend_btn.Size = new System.Drawing.Size(123, 35);
+            this.Attend_btn.TabIndex = 124;
+            this.Attend_btn.Text = "Attendance";
+            this.Attend_btn.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // Logout_btn
             // 
-            this.button6.BackColor = System.Drawing.Color.Azure;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(24, 360);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(123, 35);
-            this.button6.TabIndex = 123;
-            this.button6.Text = "Logout";
-            this.button6.UseVisualStyleBackColor = false;
+            this.Logout_btn.BackColor = System.Drawing.Color.Azure;
+            this.Logout_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Logout_btn.Location = new System.Drawing.Point(24, 360);
+            this.Logout_btn.Name = "Logout_btn";
+            this.Logout_btn.Size = new System.Drawing.Size(123, 35);
+            this.Logout_btn.TabIndex = 123;
+            this.Logout_btn.Text = "Logout";
+            this.Logout_btn.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // Payment_btn
             // 
-            this.button7.BackColor = System.Drawing.Color.Azure;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(24, 319);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(123, 35);
-            this.button7.TabIndex = 122;
-            this.button7.Text = "Payment";
-            this.button7.UseVisualStyleBackColor = false;
+            this.Payment_btn.BackColor = System.Drawing.Color.Azure;
+            this.Payment_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Payment_btn.Location = new System.Drawing.Point(24, 319);
+            this.Payment_btn.Name = "Payment_btn";
+            this.Payment_btn.Size = new System.Drawing.Size(123, 35);
+            this.Payment_btn.TabIndex = 122;
+            this.Payment_btn.Text = "Payment";
+            this.Payment_btn.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // Delete_btn
             // 
-            this.button8.BackColor = System.Drawing.Color.Azure;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(24, 278);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(123, 35);
-            this.button8.TabIndex = 121;
-            this.button8.Text = "Delete Record";
-            this.button8.UseVisualStyleBackColor = false;
+            this.Delete_btn.BackColor = System.Drawing.Color.Azure;
+            this.Delete_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Delete_btn.Location = new System.Drawing.Point(24, 278);
+            this.Delete_btn.Name = "Delete_btn";
+            this.Delete_btn.Size = new System.Drawing.Size(123, 35);
+            this.Delete_btn.TabIndex = 121;
+            this.Delete_btn.Text = "Delete Record";
+            this.Delete_btn.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // Update_btn
             // 
-            this.button9.BackColor = System.Drawing.Color.Azure;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(24, 235);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(123, 35);
-            this.button9.TabIndex = 120;
-            this.button9.Text = "Update Record";
-            this.button9.UseVisualStyleBackColor = false;
+            this.Update_btn.BackColor = System.Drawing.Color.Azure;
+            this.Update_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Update_btn.Location = new System.Drawing.Point(24, 235);
+            this.Update_btn.Name = "Update_btn";
+            this.Update_btn.Size = new System.Drawing.Size(123, 35);
+            this.Update_btn.TabIndex = 120;
+            this.Update_btn.Text = "Update Record";
+            this.Update_btn.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // View_btn
             // 
-            this.button10.BackColor = System.Drawing.Color.Azure;
-            this.button10.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(24, 194);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(123, 35);
-            this.button10.TabIndex = 119;
-            this.button10.Text = "View Record";
-            this.button10.UseVisualStyleBackColor = false;
+            this.View_btn.BackColor = System.Drawing.Color.Azure;
+            this.View_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.View_btn.Location = new System.Drawing.Point(24, 194);
+            this.View_btn.Name = "View_btn";
+            this.View_btn.Size = new System.Drawing.Size(123, 35);
+            this.View_btn.TabIndex = 119;
+            this.View_btn.Text = "View Record";
+            this.View_btn.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // Add_btn
             // 
-            this.button11.BackColor = System.Drawing.Color.Azure;
-            this.button11.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(24, 153);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(123, 35);
-            this.button11.TabIndex = 118;
-            this.button11.Text = "Add Record";
-            this.button11.UseVisualStyleBackColor = false;
+            this.Add_btn.BackColor = System.Drawing.Color.Azure;
+            this.Add_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add_btn.Location = new System.Drawing.Point(24, 153);
+            this.Add_btn.Name = "Add_btn";
+            this.Add_btn.Size = new System.Drawing.Size(123, 35);
+            this.Add_btn.TabIndex = 118;
+            this.Add_btn.Text = "Add Record";
+            this.Add_btn.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // Dash_btn
             // 
-            this.button12.BackColor = System.Drawing.Color.Azure;
-            this.button12.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(24, 71);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(123, 35);
-            this.button12.TabIndex = 117;
-            this.button12.Text = "Dashboard";
-            this.button12.UseVisualStyleBackColor = false;
+            this.Dash_btn.BackColor = System.Drawing.Color.Azure;
+            this.Dash_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dash_btn.Location = new System.Drawing.Point(24, 71);
+            this.Dash_btn.Name = "Dash_btn";
+            this.Dash_btn.Size = new System.Drawing.Size(123, 35);
+            this.Dash_btn.TabIndex = 117;
+            this.Dash_btn.Text = "Dashboard";
+            this.Dash_btn.UseVisualStyleBackColor = false;
             // 
             // AddStudent
             // 
@@ -800,8 +795,8 @@
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.Save_btn);
+            this.Controls.Add(this.Reset_btn);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label23);
@@ -815,14 +810,14 @@
             this.Controls.Add(this.textBox17);
             this.Controls.Add(this.textBox18);
             this.Controls.Add(this.label27);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button12);
+            this.Controls.Add(this.Attend_btn);
+            this.Controls.Add(this.Logout_btn);
+            this.Controls.Add(this.Payment_btn);
+            this.Controls.Add(this.Delete_btn);
+            this.Controls.Add(this.Update_btn);
+            this.Controls.Add(this.View_btn);
+            this.Controls.Add(this.Add_btn);
+            this.Controls.Add(this.Dash_btn);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label13);
@@ -913,8 +908,8 @@
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button Save_btn;
+        private System.Windows.Forms.Button Reset_btn;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
@@ -928,13 +923,13 @@
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button Attend_btn;
+        private System.Windows.Forms.Button Logout_btn;
+        private System.Windows.Forms.Button Payment_btn;
+        private System.Windows.Forms.Button Delete_btn;
+        private System.Windows.Forms.Button Update_btn;
+        private System.Windows.Forms.Button View_btn;
+        private System.Windows.Forms.Button Add_btn;
+        private System.Windows.Forms.Button Dash_btn;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace student_ms
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -93,7 +93,7 @@
             this.loginbtn.TabIndex = 52;
             this.loginbtn.Text = "Login";
             this.loginbtn.UseVisualStyleBackColor = false;
-            this.loginbtn.Click += new System.EventHandler(this.loginbtn_Click);
+          
             // 
             // Form1
             // 

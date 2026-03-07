@@ -316,7 +316,7 @@
             this.Logoutbtn.TabIndex = 123;
             this.Logoutbtn.Text = "Logout";
             this.Logoutbtn.UseVisualStyleBackColor = false;
-            this.Logoutbtn.Click += new System.EventHandler(this.Logoutbtn_Click);
+            
             // 
             // Paymentbtn
             // 
@@ -350,7 +350,6 @@
             this.Updatebtn.TabIndex = 120;
             this.Updatebtn.Text = "Update Record";
             this.Updatebtn.UseVisualStyleBackColor = false;
-            this.Updatebtn.Click += new System.EventHandler(this.Updatebtn_Click);
             // 
             // Viewbtn
             // 
@@ -361,9 +360,7 @@
             this.Viewbtn.Size = new System.Drawing.Size(118, 35);
             this.Viewbtn.TabIndex = 119;
             this.Viewbtn.Text = "View Record";
-            this.Viewbtn.UseVisualStyleBackColor = false;
-            this.Viewbtn.Click += new System.EventHandler(this.Viewbtn_Click);
-            // 
+            this.Viewbtn.UseVisualStyleBackColor = false;            // 
             // Addbtn
             // 
             this.Addbtn.BackColor = System.Drawing.Color.DarkTurquoise;
@@ -374,7 +371,6 @@
             this.Addbtn.TabIndex = 118;
             this.Addbtn.Text = "Add Record";
             this.Addbtn.UseVisualStyleBackColor = false;
-            this.Addbtn.Click += new System.EventHandler(this.Addbtn_Click);
             // 
             // Dabtn
             // 
@@ -386,7 +382,6 @@
             this.Dabtn.TabIndex = 117;
             this.Dabtn.Text = "Dashboard";
             this.Dabtn.UseVisualStyleBackColor = false;
-            this.Dabtn.Click += new System.EventHandler(this.Dabtn_Click);
             // 
             // label1
             // 

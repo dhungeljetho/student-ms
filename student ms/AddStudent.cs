@@ -16,6 +16,8 @@ namespace student_ms
         {
             InitializeComponent();
 
+            Load += AddStudent_Load;
+
             foreach (Control ctrl in this.Controls)
             {
                 if (ctrl is Button btn)
@@ -43,40 +45,14 @@ namespace student_ms
             btn.ForeColor = Color.Black;
         }
 
-        private void Dabtn_Click(object sender, EventArgs e)
+        private void AddStudent_Load(object sender, EventArgs e)
         {
-            var dash = new Dashboard();
-            this.Hide();
-            dash.ShowDialog();
+           Dash_btn.Click += Dash_btn_Click;
         }
 
-        private void Viewbtn_Click(object sender, EventArgs e)
+        private void Dash_btn_Click(object sender, EventArgs e)
         {
-            var view = new Viewrec();
-            this.Hide();
-            view.ShowDialog();
-        }
-
-        private void Updatebtn_Click(object sender, EventArgs e)
-        {
-            var update = new Updaterecord();
-            this.Hide();
-            update.ShowDialog();
-        }
-
-        private void Deletebtn_Click(object sender, EventArgs e)
-        {
-            var delete = new Deleterec();
-            this.Hide();
-            delete.ShowDialog();
-                
-        }
-
-        private void Logoutbtn_Click(object sender, EventArgs e)
-        {
-            var login1 = new Form1();
-            this.Hide();
-            login1.ShowDialog();
+            this.Owner.Show();
         }
     }
 }

@@ -86,7 +86,6 @@
             this.Logoutbtn.TabIndex = 60;
             this.Logoutbtn.Text = "Logout";
             this.Logoutbtn.UseVisualStyleBackColor = false;
-            this.Logoutbtn.Click += new System.EventHandler(this.Logoutbtn_Click);
             // 
             // Paymentbtn
             // 
@@ -109,7 +108,6 @@
             this.Deletebtn.TabIndex = 58;
             this.Deletebtn.Text = "Delete Record";
             this.Deletebtn.UseVisualStyleBackColor = false;
-            this.Deletebtn.Click += new System.EventHandler(this.Deletebtn_Click);
             // 
             // Updatebtn
             // 
@@ -121,7 +119,6 @@
             this.Updatebtn.TabIndex = 57;
             this.Updatebtn.Text = "Update Record";
             this.Updatebtn.UseVisualStyleBackColor = false;
-            this.Updatebtn.Click += new System.EventHandler(this.Updatebtn_Click);
             // 
             // Viewbtn
             // 
@@ -133,7 +130,6 @@
             this.Viewbtn.TabIndex = 56;
             this.Viewbtn.Text = "View Record";
             this.Viewbtn.UseVisualStyleBackColor = false;
-            this.Viewbtn.Click += new System.EventHandler(this.Viewbtn_Click);
             // 
             // Addbtn
             // 
@@ -145,7 +141,6 @@
             this.Addbtn.TabIndex = 55;
             this.Addbtn.Text = "Add Record";
             this.Addbtn.UseVisualStyleBackColor = false;
-            this.Addbtn.Click += new System.EventHandler(this.Addbtn_Click);
             // 
             // Dabtn
             // 
@@ -424,7 +419,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(762, 450);
+            this.ClientSize = new System.Drawing.Size(762, 454);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label13);
