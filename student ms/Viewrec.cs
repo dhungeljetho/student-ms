@@ -15,7 +15,19 @@ namespace student_ms
         public Viewrec()
         {
             InitializeComponent();
+
+            this.Load += Viewrec_Load;
         }
 
+        private void Viewrec_Load(object sender, EventArgs e)
+        {
+            Dabtn.Click += Dabtn_Click;
+        }
+
+        private void Dabtn_Click(object sender, EventArgs e)
+        {
+            this.Owner.Show();
+            this.Close();
+        }
     }
 }

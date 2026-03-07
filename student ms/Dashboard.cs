@@ -50,12 +50,21 @@ namespace student_ms
 
             Logoutbtn.Click += Logoutbtn_Click;
 
-            //Viewbtn.Click += Viewbtn_Click;
+            Viewbtn.Click += Viewbtn_Click; ;
 
             //Updatebtn.Click += Updatebtn_Click;
 
             Deletebtn.Click += Deletebtn_Click;
 
+        }
+
+        private void Viewbtn_Click(object sender, EventArgs e)
+        {
+            var view = new Viewrec();
+            view.Owner = this;
+            this.Hide();
+            view.ShowDialog();
+            this.Show();
         }
 
         private void Addbtn_Click(object sender, EventArgs e)
