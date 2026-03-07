@@ -22,6 +22,16 @@ namespace student_ms
         private void Deleterec_Load(object sender, EventArgs e)
         {
             Dabtn.Click += Dash_btn_Click;
+
+            Viewbtn.Click += Viewbtn_Click;
+        }
+
+        private void Viewbtn_Click(object sender, EventArgs e)
+        {
+           var viewForm = new Viewrec();
+            viewForm.Owner = this.Owner;
+            viewForm.Show();
+            this.Close();
         }
 
         private void Dash_btn_Click(object sender, EventArgs e)
