@@ -43,7 +43,7 @@ namespace student_ms
         //    btn.BackColor = SystemColors.Control;
         //    btn.ForeColor = Color.Black;
         //}
-        
+
         private void Dashboard_Load(object sender, EventArgs e)
         {
             Addbtn.Click += Addbtn_Click;
@@ -61,6 +61,7 @@ namespace student_ms
         private void Addbtn_Click(object sender, EventArgs e)
         {
             var add = new AddStudent();
+            add.Owner = this;
             this.Hide();
             add.ShowDialog();
             this.Show();

@@ -39,7 +39,6 @@
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.label7 = new System.Windows.Forms.Label();
@@ -54,16 +53,7 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.Attenbtn = new System.Windows.Forms.Button();
-            this.Logoutbtn = new System.Windows.Forms.Button();
-            this.Paymentbtn = new System.Windows.Forms.Button();
-            this.Deletebtn = new System.Windows.Forms.Button();
-            this.Updatebtn = new System.Windows.Forms.Button();
-            this.Viewbtn = new System.Windows.Forms.Button();
-            this.Addbtn = new System.Windows.Forms.Button();
-            this.Dabtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -74,8 +64,6 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
-            this.Save_btn = new System.Windows.Forms.Button();
-            this.Reset_btn = new System.Windows.Forms.Button();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -89,14 +77,12 @@
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.Attend_btn = new System.Windows.Forms.Button();
-            this.Logout_btn = new System.Windows.Forms.Button();
-            this.Payment_btn = new System.Windows.Forms.Button();
             this.Delete_btn = new System.Windows.Forms.Button();
             this.Update_btn = new System.Windows.Forms.Button();
             this.View_btn = new System.Windows.Forms.Button();
             this.Add_btn = new System.Windows.Forms.Button();
             this.Dash_btn = new System.Windows.Forms.Button();
+            this.Save_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label14
@@ -198,17 +184,6 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(155, 20);
             this.textBox7.TabIndex = 105;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Blue;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(479, 396);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 35);
-            this.button2.TabIndex = 104;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -341,94 +316,6 @@
             this.label2.TabIndex = 90;
             this.label2.Text = "Student Number:";
             // 
-            // Attenbtn
-            // 
-            this.Attenbtn.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.Attenbtn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Attenbtn.Location = new System.Drawing.Point(24, 112);
-            this.Attenbtn.Name = "Attenbtn";
-            this.Attenbtn.Size = new System.Drawing.Size(118, 35);
-            this.Attenbtn.TabIndex = 89;
-            this.Attenbtn.Text = "Attendance";
-            this.Attenbtn.UseVisualStyleBackColor = false;
-            // 
-            // Logoutbtn
-            // 
-            this.Logoutbtn.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.Logoutbtn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Logoutbtn.Location = new System.Drawing.Point(24, 360);
-            this.Logoutbtn.Name = "Logoutbtn";
-            this.Logoutbtn.Size = new System.Drawing.Size(118, 35);
-            this.Logoutbtn.TabIndex = 88;
-            this.Logoutbtn.Text = "Logout";
-            this.Logoutbtn.UseVisualStyleBackColor = false;
-            // 
-            // Paymentbtn
-            // 
-            this.Paymentbtn.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.Paymentbtn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Paymentbtn.Location = new System.Drawing.Point(24, 319);
-            this.Paymentbtn.Name = "Paymentbtn";
-            this.Paymentbtn.Size = new System.Drawing.Size(118, 35);
-            this.Paymentbtn.TabIndex = 87;
-            this.Paymentbtn.Text = "Payment";
-            this.Paymentbtn.UseVisualStyleBackColor = false;
-            // 
-            // Deletebtn
-            // 
-            this.Deletebtn.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.Deletebtn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Deletebtn.Location = new System.Drawing.Point(24, 278);
-            this.Deletebtn.Name = "Deletebtn";
-            this.Deletebtn.Size = new System.Drawing.Size(118, 35);
-            this.Deletebtn.TabIndex = 86;
-            this.Deletebtn.Text = "Delete Record";
-            this.Deletebtn.UseVisualStyleBackColor = false;
-            // 
-            // Updatebtn
-            // 
-            this.Updatebtn.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.Updatebtn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Updatebtn.Location = new System.Drawing.Point(24, 235);
-            this.Updatebtn.Name = "Updatebtn";
-            this.Updatebtn.Size = new System.Drawing.Size(118, 35);
-            this.Updatebtn.TabIndex = 85;
-            this.Updatebtn.Text = "Update Record";
-            this.Updatebtn.UseVisualStyleBackColor = false;
-            // 
-            // Viewbtn
-            // 
-            this.Viewbtn.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.Viewbtn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Viewbtn.Location = new System.Drawing.Point(24, 194);
-            this.Viewbtn.Name = "Viewbtn";
-            this.Viewbtn.Size = new System.Drawing.Size(118, 35);
-            this.Viewbtn.TabIndex = 84;
-            this.Viewbtn.Text = "View Record";
-            this.Viewbtn.UseVisualStyleBackColor = false;
-            // 
-            // Addbtn
-            // 
-            this.Addbtn.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.Addbtn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Addbtn.Location = new System.Drawing.Point(24, 153);
-            this.Addbtn.Name = "Addbtn";
-            this.Addbtn.Size = new System.Drawing.Size(118, 35);
-            this.Addbtn.TabIndex = 83;
-            this.Addbtn.Text = "Add Record";
-            this.Addbtn.UseVisualStyleBackColor = false;
-            // 
-            // Dabtn
-            // 
-            this.Dabtn.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.Dabtn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dabtn.Location = new System.Drawing.Point(24, 71);
-            this.Dabtn.Name = "Dabtn";
-            this.Dabtn.Size = new System.Drawing.Size(118, 35);
-            this.Dabtn.TabIndex = 82;
-            this.Dabtn.Text = "Dashboard";
-            this.Dabtn.UseVisualStyleBackColor = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -438,17 +325,6 @@
             this.label1.Size = new System.Drawing.Size(170, 32);
             this.label1.TabIndex = 81;
             this.label1.Text = "Add Student";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.White;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(191, 293);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(153, 25);
-            this.label15.TabIndex = 150;
-            this.label15.Text = "Parent\'s Details:";
             // 
             // textBox10
             // 
@@ -542,28 +418,6 @@
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(155, 29);
             this.textBox13.TabIndex = 140;
-            // 
-            // Save_btn
-            // 
-            this.Save_btn.BackColor = System.Drawing.Color.Chocolate;
-            this.Save_btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Save_btn.Location = new System.Drawing.Point(479, 396);
-            this.Save_btn.Name = "Save_btn";
-            this.Save_btn.Size = new System.Drawing.Size(118, 35);
-            this.Save_btn.TabIndex = 139;
-            this.Save_btn.Text = "Save";
-            this.Save_btn.UseVisualStyleBackColor = false;
-            // 
-            // Reset_btn
-            // 
-            this.Reset_btn.BackColor = System.Drawing.SystemColors.GrayText;
-            this.Reset_btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Reset_btn.Location = new System.Drawing.Point(607, 396);
-            this.Reset_btn.Name = "Reset_btn";
-            this.Reset_btn.Size = new System.Drawing.Size(118, 35);
-            this.Reset_btn.TabIndex = 138;
-            this.Reset_btn.Text = "Reset";
-            this.Reset_btn.UseVisualStyleBackColor = false;
             // 
             // radioButton3
             // 
@@ -690,44 +544,11 @@
             this.label27.TabIndex = 125;
             this.label27.Text = "Student Number:";
             // 
-            // Attend_btn
-            // 
-            this.Attend_btn.BackColor = System.Drawing.Color.Azure;
-            this.Attend_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Attend_btn.Location = new System.Drawing.Point(24, 112);
-            this.Attend_btn.Name = "Attend_btn";
-            this.Attend_btn.Size = new System.Drawing.Size(123, 35);
-            this.Attend_btn.TabIndex = 124;
-            this.Attend_btn.Text = "Attendance";
-            this.Attend_btn.UseVisualStyleBackColor = false;
-            // 
-            // Logout_btn
-            // 
-            this.Logout_btn.BackColor = System.Drawing.Color.Azure;
-            this.Logout_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Logout_btn.Location = new System.Drawing.Point(24, 360);
-            this.Logout_btn.Name = "Logout_btn";
-            this.Logout_btn.Size = new System.Drawing.Size(123, 35);
-            this.Logout_btn.TabIndex = 123;
-            this.Logout_btn.Text = "Logout";
-            this.Logout_btn.UseVisualStyleBackColor = false;
-            // 
-            // Payment_btn
-            // 
-            this.Payment_btn.BackColor = System.Drawing.Color.Azure;
-            this.Payment_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Payment_btn.Location = new System.Drawing.Point(24, 319);
-            this.Payment_btn.Name = "Payment_btn";
-            this.Payment_btn.Size = new System.Drawing.Size(123, 35);
-            this.Payment_btn.TabIndex = 122;
-            this.Payment_btn.Text = "Payment";
-            this.Payment_btn.UseVisualStyleBackColor = false;
-            // 
             // Delete_btn
             // 
             this.Delete_btn.BackColor = System.Drawing.Color.Azure;
             this.Delete_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Delete_btn.Location = new System.Drawing.Point(24, 278);
+            this.Delete_btn.Location = new System.Drawing.Point(28, 273);
             this.Delete_btn.Name = "Delete_btn";
             this.Delete_btn.Size = new System.Drawing.Size(123, 35);
             this.Delete_btn.TabIndex = 121;
@@ -738,7 +559,7 @@
             // 
             this.Update_btn.BackColor = System.Drawing.Color.Azure;
             this.Update_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Update_btn.Location = new System.Drawing.Point(24, 235);
+            this.Update_btn.Location = new System.Drawing.Point(28, 230);
             this.Update_btn.Name = "Update_btn";
             this.Update_btn.Size = new System.Drawing.Size(123, 35);
             this.Update_btn.TabIndex = 120;
@@ -749,7 +570,7 @@
             // 
             this.View_btn.BackColor = System.Drawing.Color.Azure;
             this.View_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.View_btn.Location = new System.Drawing.Point(24, 194);
+            this.View_btn.Location = new System.Drawing.Point(28, 189);
             this.View_btn.Name = "View_btn";
             this.View_btn.Size = new System.Drawing.Size(123, 35);
             this.View_btn.TabIndex = 119;
@@ -760,7 +581,7 @@
             // 
             this.Add_btn.BackColor = System.Drawing.Color.Azure;
             this.Add_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add_btn.Location = new System.Drawing.Point(24, 153);
+            this.Add_btn.Location = new System.Drawing.Point(28, 148);
             this.Add_btn.Name = "Add_btn";
             this.Add_btn.Size = new System.Drawing.Size(123, 35);
             this.Add_btn.TabIndex = 118;
@@ -771,12 +592,23 @@
             // 
             this.Dash_btn.BackColor = System.Drawing.Color.Azure;
             this.Dash_btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dash_btn.Location = new System.Drawing.Point(24, 71);
+            this.Dash_btn.Location = new System.Drawing.Point(28, 106);
             this.Dash_btn.Name = "Dash_btn";
             this.Dash_btn.Size = new System.Drawing.Size(123, 35);
             this.Dash_btn.TabIndex = 117;
             this.Dash_btn.Text = "Dashboard";
             this.Dash_btn.UseVisualStyleBackColor = false;
+            // 
+            // Save_btn
+            // 
+            this.Save_btn.BackColor = System.Drawing.Color.Chocolate;
+            this.Save_btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Save_btn.Location = new System.Drawing.Point(484, 399);
+            this.Save_btn.Name = "Save_btn";
+            this.Save_btn.Size = new System.Drawing.Size(118, 35);
+            this.Save_btn.TabIndex = 139;
+            this.Save_btn.Text = "Save";
+            this.Save_btn.UseVisualStyleBackColor = false;
             // 
             // AddStudent
             // 
@@ -784,7 +616,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label17);
@@ -796,7 +627,6 @@
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.Save_btn);
-            this.Controls.Add(this.Reset_btn);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label23);
@@ -810,9 +640,6 @@
             this.Controls.Add(this.textBox17);
             this.Controls.Add(this.textBox18);
             this.Controls.Add(this.label27);
-            this.Controls.Add(this.Attend_btn);
-            this.Controls.Add(this.Logout_btn);
-            this.Controls.Add(this.Payment_btn);
             this.Controls.Add(this.Delete_btn);
             this.Controls.Add(this.Update_btn);
             this.Controls.Add(this.View_btn);
@@ -829,7 +656,6 @@
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.label7);
@@ -844,14 +670,6 @@
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.Attenbtn);
-            this.Controls.Add(this.Logoutbtn);
-            this.Controls.Add(this.Paymentbtn);
-            this.Controls.Add(this.Deletebtn);
-            this.Controls.Add(this.Updatebtn);
-            this.Controls.Add(this.Viewbtn);
-            this.Controls.Add(this.Addbtn);
-            this.Controls.Add(this.Dabtn);
             this.Controls.Add(this.label1);
             this.Name = "AddStudent";
             this.Text = "AddStudent";
@@ -873,7 +691,6 @@
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Label label7;
@@ -888,16 +705,7 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button Attenbtn;
-        private System.Windows.Forms.Button Logoutbtn;
-        private System.Windows.Forms.Button Paymentbtn;
-        private System.Windows.Forms.Button Deletebtn;
-        private System.Windows.Forms.Button Updatebtn;
-        private System.Windows.Forms.Button Viewbtn;
-        private System.Windows.Forms.Button Addbtn;
-        private System.Windows.Forms.Button Dabtn;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
@@ -908,8 +716,6 @@
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Button Save_btn;
-        private System.Windows.Forms.Button Reset_btn;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
@@ -923,13 +729,11 @@
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Button Attend_btn;
-        private System.Windows.Forms.Button Logout_btn;
-        private System.Windows.Forms.Button Payment_btn;
         private System.Windows.Forms.Button Delete_btn;
         private System.Windows.Forms.Button Update_btn;
         private System.Windows.Forms.Button View_btn;
         private System.Windows.Forms.Button Add_btn;
         private System.Windows.Forms.Button Dash_btn;
+        private System.Windows.Forms.Button Save_btn;
     }
 }
