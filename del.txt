@@ -1,0 +1,37 @@
+ 
+ INSERT INTO Login_table (
+id ,
+Username ,
+Password varchar(30) )";
+
+
+
+Id int Auto_increment primary key,
+Full_Name varchar(50) not null,
+Phone_Number varchar(14) not null,
+Address varchar(30) not null,
+Username varchar(20) not null unique,
+Password varchar(30) not null)";
+$conn->exec($cmd);
+
+INSERT INTO  Student_tb (
+Student_Id ,
+Roll_No ,
+Student_Name, 
+DOB ,
+Class,  
+Section, 
+School_Name, 
+Guardian_Name, 
+Phone_Number ,
+Guardian_Number, 
+Address )";
+
+
+INSERT INTO Attendance_table (
+Roll_No INT not null unique,
+Student_Name varchar(50) not null,
+Status varchar(10) not null)";
+$conn->exec($cmd);
+
+?> 

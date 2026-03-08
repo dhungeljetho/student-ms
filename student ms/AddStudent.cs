@@ -15,9 +15,6 @@ namespace student_ms
     public partial class AddStudent : Form
     {
 
-        //Database connection
-        private string connString = "Server=127.0.0.1;Port=3306;User ID=root;Password=;Database=Student_ms;";
-
         public AddStudent()
         {
             InitializeComponent();
@@ -55,6 +52,8 @@ namespace student_ms
         private void AddStudent_Load(object sender, EventArgs e)
         {
            Dash_btn.Click += Dash_btn_Click;
+
+            Save_btn.Click += Save_btn_Click;
         }
 
         private void Dash_btn_Click(object sender, EventArgs e)
@@ -63,6 +62,13 @@ namespace student_ms
             this.Close();
         }
 
-        
+        //Whole code related to Database connection and setup
+        //Database connection
+
+        private void Save_btn_Click(object sender, EventArgs e)
+        {
+           // String connectionString = "Server=127.0.0.1;Port=3306;User ID=root;Password=;Database=Student_ms;";
+        }
+
     }
 }

@@ -612,6 +612,7 @@
             // 
             // AddStudent
             // 
+            this.AcceptButton = this.Save_btn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
