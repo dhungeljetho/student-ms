@@ -28,48 +28,52 @@ namespace student_ms
 
         private void Loginbtn_Click(object sender, EventArgs e)
         {
+            Dashboard dash = new Dashboard();
+            dash.Owner = this;
+            dash.Show();
+            this.Hide();
 
-            String connectionString = "Server=127.0.0.1;Port=3306;User ID=root;Password=;Database=Student_ms;";
-            String querry = "SELECT * FROM Login_table WHERE Username = @username AND Password = @password;";
+            //    String connectionString = "Server=127.0.0.1;Port=3306;User ID=root;Password=;Database=Student_ms;";
+            //    String querry = "SELECT * FROM Login_table WHERE Username = @username AND Password = @password;";
 
-            using (MySqlConnection conn = new MySqlConnection(connectionString)) {
-                try
-                {
-                    conn.Open();
-                     MessageBox.Show("connection successful");
-                    using (MySqlCommand cmd = new MySqlCommand(querry, conn))
-                    {
+            //    using (MySqlConnection conn = new MySqlConnection(connectionString)) {
+            //        try
+            //        {
+            //            conn.Open();
+            //             MessageBox.Show("connection successful");
+            //            using (MySqlCommand cmd = new MySqlCommand(querry, conn))
+            //            {
 
-                        cmd.Parameters.AddWithValue("@username", user.Text);
-                        cmd.Parameters.AddWithValue("@password", pass.Text);
+            //                cmd.Parameters.AddWithValue("@username", user.Text);
+            //                cmd.Parameters.AddWithValue("@password", pass.Text);
 
-                        using (MySqlDataReader reader = cmd.ExecuteReader())
-                        {
-                            if (reader.HasRows)
-                            {
-                                MessageBox.Show("Login Successful");
-                                Dashboard dash = new Dashboard();
-                                dash.Owner = this;
-                                dash.Show();
-                                this.Hide();
-                            } 
+            //                using (MySqlDataReader reader = cmd.ExecuteReader())
+            //                {
+            //                    if (reader.HasRows)
+            //                    {
+            //                        MessageBox.Show("Login Successful");
+            //                        Dashboard dash = new Dashboard();
+            //                        dash.Owner = this;
+            //                        dash.Show();
+            //                        this.Hide();
+            //                    } 
 
-                            else
-                            {
-                                MessageBox.Show("Login Failed. Invalid Username or Password");
-                            }
-                        }
-                    }
+            //                    else
+            //                    {
+            //                        MessageBox.Show("Login Failed. Invalid Username or Password");
+            //                    }
+            //                }
+            //            }
 
-                    //Dashboard dash = new Dashboard();
-                    //dash.Owner = this;
-                    //dash.Show();
-                    //this.Hide();
+            //            //Dashboard dash = new Dashboard();
+            //            //dash.Owner = this;
+            //            //dash.Show();
+            //            //this.Hide();
 
-                } catch (Exception ex) {
-                    MessageBox.Show("connection failed:" + ex.Message);
-                }
-            }
+            //        } catch (Exception ex) {
+            //            MessageBox.Show("connection failed:" + ex.Message);
+            //        }
+                    //}
         } 
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)

@@ -19,7 +19,7 @@ namespace student_ms
         {
             InitializeComponent();
 
-           this.Load += AddStudent_Load;
+            this.Load += AddStudent_Load;
 
             //mouse movement
             //foreach (Control ctrl in this.Controls)
@@ -51,7 +51,9 @@ namespace student_ms
 
         private void AddStudent_Load(object sender, EventArgs e)
         {
-           Dash_btn.Click += Dash_btn_Click;
+            rbFemale.Checked = true;
+
+            Dash_btn.Click += Dash_btn_Click;
 
             Save_btn.Click += Save_btn_Click;
         }
@@ -67,8 +69,78 @@ namespace student_ms
 
         private void Save_btn_Click(object sender, EventArgs e)
         {
-           // String connectionString = "Server=127.0.0.1;Port=3306;User ID=root;Password=;Database=Student_ms;";
-        }
+            //for radio button
+            string selectedGender= rbFemale.Checked?"Female":"Male";
 
+
+            String connectionString = "Server=127.0.0.1;Port=3306;User ID=root;Password=;Database=Student_ms;";
+            String querry = "INSERT INTO  Student_table (" +
+                "Roll_No ," +
+                "Student_Name," +
+                "Class," +
+                "Section," +
+                "School_Name," +
+                "Guardian_Name," +
+                "Phone_Number ," +
+                "Gender," +
+                "Address ) " +
+
+                "VALUES (" +
+                "@rollNo ," +
+                "@studentName," +
+                "@class," +
+                "@section," +
+                "@schoolName," +
+                "@guardianName," +
+                "@phoneNumber ," +
+                "@gender," +
+                "@address );";
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+
+                    using (MySqlCommand cmd = new MySqlCommand(querry, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@rollNo", roll.Text);
+                        cmd.Parameters.AddWithValue("@studentName", name.Text);
+                        cmd.Parameters.AddWithValue("@class", class0.Text);
+                        cmd.Parameters.AddWithValue("@section", section0.Text);
+                        cmd.Parameters.AddWithValue("@schoolName", school.Text);
+                        cmd.Parameters.AddWithValue("@guardianName", pname.Text);
+                        cmd.Parameters.AddWithValue("@phoneNumber", pno.Text);
+                        cmd.Parameters.AddWithValue("@gender", selectedGender);
+                        cmd.Parameters.AddWithValue("@address", address.Text);
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Student added successfully!");
+                            // Clear input fields after successful insertion
+                            roll.Clear();
+                            name.Clear();
+                            class0.Clear();
+                            section0.Clear();
+                            school.Clear();
+                            pname.Clear();
+                            rbFemale.Checked = true;
+                            pno.Clear();
+                            address.Clear();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed to add student. Please try again.");
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
+
+
+        }
     }
 }
