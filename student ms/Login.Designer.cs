@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.pass = new System.Windows.Forms.TextBox();
             this.Password = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.user = new System.Windows.Forms.TextBox();
             this.UserName = new System.Windows.Forms.Label();
             this.loginbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -47,13 +47,13 @@
             this.label1.Text = "Welcome\r\n User,";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
-            // textBox3
+            // pass
             // 
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(236, 241);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(235, 29);
-            this.textBox3.TabIndex = 1;
+            this.pass.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pass.Location = new System.Drawing.Point(236, 241);
+            this.pass.Name = "pass";
+            this.pass.Size = new System.Drawing.Size(235, 29);
+            this.pass.TabIndex = 1;
             // 
             // Password
             // 
@@ -65,13 +65,13 @@
             this.Password.TabIndex = 55;
             this.Password.Text = "Password:";
             // 
-            // textBox1
+            // user
             // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(236, 195);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(235, 29);
-            this.textBox1.TabIndex = 0;
+            this.user.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user.Location = new System.Drawing.Point(236, 195);
+            this.user.Name = "user";
+            this.user.Size = new System.Drawing.Size(235, 29);
+            this.user.TabIndex = 0;
             // 
             // UserName
             // 
@@ -101,9 +101,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.pass);
             this.Controls.Add(this.Password);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.user);
             this.Controls.Add(this.UserName);
             this.Controls.Add(this.loginbtn);
             this.Name = "Login";
@@ -117,9 +117,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox pass;
         private System.Windows.Forms.Label Password;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox user;
         private System.Windows.Forms.Label UserName;
         private System.Windows.Forms.Button loginbtn;
     }
