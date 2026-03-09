@@ -62,8 +62,22 @@ namespace student_ms
             Update_btn.Click += Update_btn_Click;
 
             View_btn.Click += View_btn_Click;
+
+            Reset_btn.Click += Reset_btn_Click;
         }
 
+        private void Reset_btn_Click(object sender, EventArgs e)
+        {
+            roll.Clear();
+            name.Clear();
+            class0.Clear();
+            section0.Clear();
+            school.Clear();
+            pname.Clear();
+            rbFemale.Checked = true;
+            pno.Clear();
+            address.Clear();
+        }
         private void View_btn_Click(object sender, EventArgs e)
         {
             var viewStudent = new Viewrec();
