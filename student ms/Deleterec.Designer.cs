@@ -51,7 +51,7 @@
             this.s_no = new System.Windows.Forms.TextBox();
             this.rbFemale = new System.Windows.Forms.RadioButton();
             this.class1 = new System.Windows.Forms.TextBox();
-            this.rollno = new System.Windows.Forms.TextBox();
+            this.rollval = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.delbtn = new System.Windows.Forms.Button();
@@ -286,13 +286,13 @@
             this.class1.Size = new System.Drawing.Size(127, 29);
             this.class1.TabIndex = 187;
             // 
-            // rollno
+            // rollval
             // 
-            this.rollno.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rollno.Location = new System.Drawing.Point(597, 162);
-            this.rollno.Name = "rollno";
-            this.rollno.Size = new System.Drawing.Size(127, 29);
-            this.rollno.TabIndex = 185;
+            this.rollval.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rollval.Location = new System.Drawing.Point(597, 162);
+            this.rollval.Name = "rollval";
+            this.rollval.Size = new System.Drawing.Size(127, 29);
+            this.rollval.TabIndex = 185;
             // 
             // label27
             // 
@@ -392,7 +392,7 @@
             this.Controls.Add(this.rbFemale);
             this.Controls.Add(this.class1);
             this.Controls.Add(this.pname1);
-            this.Controls.Add(this.rollno);
+            this.Controls.Add(this.rollval);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.delbtn);
@@ -430,7 +430,7 @@
         private System.Windows.Forms.TextBox s_no;
         private System.Windows.Forms.RadioButton rbFemale;
         private System.Windows.Forms.TextBox class1;
-        private System.Windows.Forms.TextBox rollno;
+        private System.Windows.Forms.TextBox rollval;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button delbtn;
