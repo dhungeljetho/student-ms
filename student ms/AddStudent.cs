@@ -21,18 +21,18 @@ namespace student_ms
 
             this.Load += AddStudent_Load;
 
-            //mouse movement
-            //foreach (Control ctrl in this.Controls)
-            //{
-            //    if (ctrl is Button btn)
-            //    {
-            //        btn.FlatStyle = FlatStyle.Flat;
-            //        btn.FlatAppearance.BorderSize = 0;
+           // mouse movement
+            foreach (Control ctrl in this.Controls)
+            {
+                if (ctrl is Button btn)
+                {
+                    btn.FlatStyle = FlatStyle.Flat;
+                    btn.FlatAppearance.BorderSize = 0;
 
-            //        btn.MouseEnter += Button_MouseEnter;
-            //        btn.MouseLeave += Button_MouseLeave;
-            //    }
-            //}
+                    //btn.MouseEnter += Button_MouseEnter;
+                    //btn.MouseLeave += Button_MouseLeave;
+                }
+            }
         }
 
         //private void Button_MouseEnter(object sender, EventArgs e)
@@ -56,6 +56,30 @@ namespace student_ms
             Dash_btn.Click += Dash_btn_Click;
 
             Save_btn.Click += Save_btn_Click;
+
+            Delete_btn.Click += Delete_btn_Click;
+
+            Update_btn.Click += Update_btn_Click;
+
+            View_btn.Click += View_btn_Click;
+        }
+
+        private void View_btn_Click(object sender, EventArgs e)
+        {
+            var viewStudent = new Viewrec();
+            viewStudent.ShowDialog();
+        }
+
+        private void Update_btn_Click(object sender, EventArgs e)
+        {
+            var updateStudent = new Updaterecord();
+            updateStudent.ShowDialog();
+        }
+
+        private void Delete_btn_Click(object sender, EventArgs e)
+        {
+            Deleterec deleterec = new Deleterec();
+            deleterec.ShowDialog();
         }
 
         private void Dash_btn_Click(object sender, EventArgs e)

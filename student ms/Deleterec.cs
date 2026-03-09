@@ -22,7 +22,35 @@ namespace student_ms
             InitializeComponent();
 
             this.Load += Deleterec_Load;
+
+      
+            foreach (Control ctrl in this.Controls)
+            {
+                if (ctrl is Button btn)
+                {
+                    btn.FlatStyle = FlatStyle.Flat;
+                    btn.FlatAppearance.BorderSize = 0;
+
+                    //btn.MouseEnter += Button_MouseEnter;
+                    //btn.MouseLeave += Button_MouseLeave;
+                }
+            }
         }
+
+        //private void Button_MouseEnter(object sender, EventArgs e)
+        //{
+        //    Button btn = (Button)sender;
+        //    btn.BackColor = Color.SteelBlue;
+        //    btn.ForeColor = Color.White;
+        //}
+
+        //private void Button_MouseLeave(object sender, EventArgs e)
+        //{
+        //    Button btn = (Button)sender;
+        //    btn.BackColor = SystemColors.Control;
+        //    btn.ForeColor = Color.Black;
+        //}
+
 
         private void Deleterec_Load(object sender, EventArgs e)
         {
@@ -30,7 +58,7 @@ namespace student_ms
 
             Viewbtn.Click += Viewbtn_Click;
 
-            delbtn.Click += delbtn_Click;
+            delbtn.Click += Delbtn_Click;
 
             searchD.Click += SearchD_Click;
         }
@@ -103,45 +131,7 @@ namespace student_ms
             }
         }
 
-        //private void delbtn_Click(object sender, EventArgs e)
-        //{
-        //     DialogResult res =MessageBox.Show("Are you sure you want to delete this record.", "Warning", MessageBoxButtons.YesNo);
-        //    if (res == DialogResult.Yes)
-        //    {
-        //        String connectionString = "Server=127.0.0.1;Port=3306;User ID=root;Password=;Database=Student_ms;";
-        //        String querry = "DELETE FROM Student_table WHERE Student_Id = @id;";
-        //        using (MySqlConnection conn = new MySqlConnection(connectionString))
-        //        {
-        //            try
-        //            {
-        //                conn.Open();
-
-        //                using (MySqlCommand cmd = new MySqlCommand(querry, conn))
-        //                {
-        //                    cmd.Parameters.AddWithValue("@id", searchforD.Text);
-
-        //                    int rowsAffected = cmd.ExecuteNonQuery();
-
-        //                    if (rowsAffected > 0)
-        //                    {
-        //                        MessageBox.Show("Student Record Deleted!");
-        //                        searchforD.Clear(); 
-        //                    }
-        //                    else
-        //                    {
-        //                        MessageBox.Show("No student found with that ID.");
-        //                    }
-        //                }
-        //            }
-        //            catch (Exception ex)
-        //            {
-        //                MessageBox.Show($"An error occurred: {ex.Message}");
-        //            }
-        //        }
-        //    }
-        //}
-
-        private void delbtn_Click(object sender, EventArgs e)
+        private void Delbtn_Click(object sender, EventArgs e)
         {
             // 1. Check if the box is empty first!
             if (string.IsNullOrWhiteSpace(searchforD.Text))
@@ -210,6 +200,6 @@ namespace student_ms
             this.Close();
         }
 
-        
+       
     }
 }

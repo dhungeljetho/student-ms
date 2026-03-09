@@ -346,13 +346,14 @@
             // 
             // searchD
             // 
+            this.searchD.BackColor = System.Drawing.Color.Blue;
             this.searchD.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchD.Location = new System.Drawing.Point(570, 76);
+            this.searchD.Location = new System.Drawing.Point(563, 75);
             this.searchD.Name = "searchD";
-            this.searchD.Size = new System.Drawing.Size(83, 25);
+            this.searchD.Size = new System.Drawing.Size(83, 30);
             this.searchD.TabIndex = 209;
             this.searchD.Text = "Search";
-            this.searchD.UseVisualStyleBackColor = true;
+            this.searchD.UseVisualStyleBackColor = false;
             // 
             // searchforD
             // 
