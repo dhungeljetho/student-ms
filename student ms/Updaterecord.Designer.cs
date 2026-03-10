@@ -263,6 +263,7 @@
             this.s_no.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s_no.Location = new System.Drawing.Point(351, 153);
             this.s_no.Name = "s_no";
+            this.s_no.ReadOnly = true;
             this.s_no.Size = new System.Drawing.Size(155, 29);
             this.s_no.TabIndex = 164;
             // 
