@@ -38,10 +38,39 @@ namespace student_ms
             Dabtn.Click += Dabtn_Click;
 
             SearchV.Click += SearchV_Click;
+
+            SearchforV.Click += SearchforV_Click;
         }
 
+        private void SearchforV_Click(object sender, EventArgs e)
+        {
+           ClearAllFields();
+        }
+
+        private void ClearAllFields()
+        {
+            SearchforV.Clear();
+            s_no.Clear();
+            s_name.Clear();
+            rollval.Clear();
+            classes1.Clear();
+            sec.Clear();
+            sc_name.Clear();
+            p_name.Clear();
+            p_no.Clear();
+            address1.Clear();
+            rbFemale.Checked = false;
+            rbMale.Checked = false;
+        }
         private void SearchV_Click(object sender, EventArgs e)
         {
+
+            if (string.IsNullOrWhiteSpace(SearchforV.Text))
+            {
+                MessageBox.Show("Please enter a Student ID to search.");
+                return;
+            }
+
             String connectionString = "Server=127.0.0.1;Port=3306;User ID=root;Password=;Database=Student_ms;";
             String querry = "SELECT * FROM Student_table WHERE Student_Id = @id;";
             using (MySqlConnection conn = new MySqlConnection(connectionString))

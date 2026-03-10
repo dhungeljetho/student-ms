@@ -170,6 +170,7 @@
             // rbMale
             // 
             this.rbMale.AutoSize = true;
+            this.rbMale.Enabled = false;
             this.rbMale.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbMale.Location = new System.Drawing.Point(694, 224);
             this.rbMale.Name = "rbMale";
@@ -251,6 +252,7 @@
             // rbFemale
             // 
             this.rbFemale.AutoSize = true;
+            this.rbFemale.Enabled = false;
             this.rbFemale.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbFemale.Location = new System.Drawing.Point(609, 224);
             this.rbFemale.Name = "rbFemale";
@@ -325,9 +327,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(394, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 32);
+            this.label1.Size = new System.Drawing.Size(156, 32);
             this.label1.TabIndex = 81;
-            this.label1.Text = "Dashboard";
+            this.label1.Text = "View Record";
             // 
             // SearchforV
             // 
@@ -341,7 +343,7 @@
             // 
             this.SearchV.BackColor = System.Drawing.Color.Azure;
             this.SearchV.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchV.Location = new System.Drawing.Point(531, 86);
+            this.SearchV.Location = new System.Drawing.Point(532, 86);
             this.SearchV.Name = "SearchV";
             this.SearchV.Size = new System.Drawing.Size(79, 34);
             this.SearchV.TabIndex = 117;
@@ -350,6 +352,7 @@
             // 
             // Viewrec
             // 
+            this.AcceptButton = this.SearchV;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;

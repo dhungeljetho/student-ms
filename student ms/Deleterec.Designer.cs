@@ -99,6 +99,7 @@
             this.sname.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sname.Location = new System.Drawing.Point(347, 195);
             this.sname.Name = "sname";
+            this.sname.ReadOnly = true;
             this.sname.Size = new System.Drawing.Size(155, 29);
             this.sname.TabIndex = 207;
             // 
@@ -168,6 +169,7 @@
             this.address1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.address1.Location = new System.Drawing.Point(347, 428);
             this.address1.Name = "address1";
+            this.address1.ReadOnly = true;
             this.address1.Size = new System.Drawing.Size(153, 29);
             this.address1.TabIndex = 200;
             // 
@@ -176,6 +178,7 @@
             this.pno1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pno1.Location = new System.Drawing.Point(639, 388);
             this.pno1.Name = "pno1";
+            this.pno1.ReadOnly = true;
             this.pno1.Size = new System.Drawing.Size(124, 29);
             this.pno1.TabIndex = 199;
             // 
@@ -184,12 +187,14 @@
             this.school1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.school1.Location = new System.Drawing.Point(348, 268);
             this.school1.Name = "school1";
+            this.school1.ReadOnly = true;
             this.school1.Size = new System.Drawing.Size(155, 29);
             this.school1.TabIndex = 198;
             // 
             // rbMale
             // 
             this.rbMale.AutoSize = true;
+            this.rbMale.Enabled = false;
             this.rbMale.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbMale.Location = new System.Drawing.Point(671, 199);
             this.rbMale.Name = "rbMale";
@@ -255,6 +260,7 @@
             this.section1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.section1.Location = new System.Drawing.Point(347, 312);
             this.section1.Name = "section1";
+            this.section1.ReadOnly = true;
             this.section1.Size = new System.Drawing.Size(117, 29);
             this.section1.TabIndex = 189;
             // 
@@ -263,12 +269,14 @@
             this.s_no.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.s_no.Location = new System.Drawing.Point(348, 158);
             this.s_no.Name = "s_no";
+            this.s_no.ReadOnly = true;
             this.s_no.Size = new System.Drawing.Size(155, 29);
             this.s_no.TabIndex = 188;
             // 
             // rbFemale
             // 
             this.rbFemale.AutoSize = true;
+            this.rbFemale.Enabled = false;
             this.rbFemale.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbFemale.Location = new System.Drawing.Point(587, 199);
             this.rbFemale.Name = "rbFemale";
@@ -283,6 +291,7 @@
             this.class1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.class1.Location = new System.Drawing.Point(586, 271);
             this.class1.Name = "class1";
+            this.class1.ReadOnly = true;
             this.class1.Size = new System.Drawing.Size(127, 29);
             this.class1.TabIndex = 187;
             // 
@@ -291,6 +300,7 @@
             this.rollval.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rollval.Location = new System.Drawing.Point(597, 162);
             this.rollval.Name = "rollval";
+            this.rollval.ReadOnly = true;
             this.rollval.Size = new System.Drawing.Size(127, 29);
             this.rollval.TabIndex = 185;
             // 
@@ -341,6 +351,7 @@
             this.pname1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pname1.Location = new System.Drawing.Point(347, 385);
             this.pname1.Name = "pname1";
+            this.pname1.ReadOnly = true;
             this.pname1.Size = new System.Drawing.Size(155, 29);
             this.pname1.TabIndex = 186;
             // 
