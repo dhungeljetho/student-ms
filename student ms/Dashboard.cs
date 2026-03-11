@@ -58,6 +58,17 @@ namespace student_ms
 
             Attenbtn.Click += Attenbtn_Click;
 
+            Paymentbtn.Click += Payment_btn_Click;
+
+        }
+
+        private void Payment_btn_Click(object sender, EventArgs e)
+        {
+            var payment = new Payment();
+            payment.Owner = this;
+            this.Hide();
+            payment.ShowDialog();
+            this.Show();
         }
 
         private void Attenbtn_Click(object sender, EventArgs e)
