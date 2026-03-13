@@ -29,32 +29,32 @@
         private void InitializeComponent()
         {
             this.label12 = new System.Windows.Forms.Label();
-            this.Dabtn = new System.Windows.Forms.Button();
+            this.paidbtn = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Dabtn = new System.Windows.Forms.Button();
+            this.paybtn = new System.Windows.Forms.Button();
             this.s_no = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.classes = new System.Windows.Forms.TextBox();
+            this.s_name = new System.Windows.Forms.TextBox();
+            this.Amount = new System.Windows.Forms.TextBox();
+            this.p_name = new System.Windows.Forms.TextBox();
+            this.paymet = new System.Windows.Forms.TextBox();
+            this.SearchforP = new System.Windows.Forms.TextBox();
+            this.SearchP = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.Month_fr = new System.Windows.Forms.DateTimePicker();
+            this.transdate = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Month_to = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label12
@@ -68,16 +68,16 @@
             this.label12.TabIndex = 78;
             this.label12.Text = "Student Number:";
             // 
-            // Dabtn
+            // paidbtn
             // 
-            this.Dabtn.BackColor = System.Drawing.Color.Azure;
-            this.Dabtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dabtn.Location = new System.Drawing.Point(676, 471);
-            this.Dabtn.Name = "Dabtn";
-            this.Dabtn.Size = new System.Drawing.Size(123, 35);
-            this.Dabtn.TabIndex = 79;
-            this.Dabtn.Text = "Paid";
-            this.Dabtn.UseVisualStyleBackColor = false;
+            this.paidbtn.BackColor = System.Drawing.Color.Azure;
+            this.paidbtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paidbtn.Location = new System.Drawing.Point(676, 471);
+            this.paidbtn.Name = "paidbtn";
+            this.paidbtn.Size = new System.Drawing.Size(123, 35);
+            this.paidbtn.TabIndex = 79;
+            this.paidbtn.Text = "Paid";
+            this.paidbtn.UseVisualStyleBackColor = false;
             // 
             // label8
             // 
@@ -145,27 +145,27 @@
             this.label14.TabIndex = 85;
             this.label14.Text = "Payment";
             // 
-            // button1
+            // Dabtn
             // 
-            this.button1.BackColor = System.Drawing.Color.Azure;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(28, 203);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 35);
-            this.button1.TabIndex = 86;
-            this.button1.Text = "Dashboard";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Dabtn.BackColor = System.Drawing.Color.Azure;
+            this.Dabtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dabtn.Location = new System.Drawing.Point(28, 203);
+            this.Dabtn.Name = "Dabtn";
+            this.Dabtn.Size = new System.Drawing.Size(123, 35);
+            this.Dabtn.TabIndex = 86;
+            this.Dabtn.Text = "Dashboard";
+            this.Dabtn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // paybtn
             // 
-            this.button2.BackColor = System.Drawing.Color.Azure;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(28, 257);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(123, 35);
-            this.button2.TabIndex = 87;
-            this.button2.Text = "Payment";
-            this.button2.UseVisualStyleBackColor = false;
+            this.paybtn.BackColor = System.Drawing.Color.Azure;
+            this.paybtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paybtn.Location = new System.Drawing.Point(28, 257);
+            this.paybtn.Name = "paybtn";
+            this.paybtn.Size = new System.Drawing.Size(123, 35);
+            this.paybtn.TabIndex = 87;
+            this.paybtn.Text = "Payment";
+            this.paybtn.UseVisualStyleBackColor = false;
             // 
             // s_no
             // 
@@ -176,78 +176,67 @@
             this.s_no.Size = new System.Drawing.Size(116, 29);
             this.s_no.TabIndex = 189;
             // 
-            // textBox1
+            // classes
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(710, 136);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(89, 29);
-            this.textBox1.TabIndex = 190;
+            this.classes.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.classes.Location = new System.Drawing.Point(710, 136);
+            this.classes.Name = "classes";
+            this.classes.ReadOnly = true;
+            this.classes.Size = new System.Drawing.Size(89, 29);
+            this.classes.TabIndex = 190;
             // 
-            // textBox2
+            // s_name
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(425, 181);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(247, 29);
-            this.textBox2.TabIndex = 191;
+            this.s_name.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s_name.Location = new System.Drawing.Point(425, 181);
+            this.s_name.Name = "s_name";
+            this.s_name.ReadOnly = true;
+            this.s_name.Size = new System.Drawing.Size(247, 29);
+            this.s_name.TabIndex = 191;
             // 
-            // textBox5
+            // Amount
             // 
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(427, 339);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(155, 29);
-            this.textBox5.TabIndex = 194;
+            this.Amount.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Amount.Location = new System.Drawing.Point(427, 339);
+            this.Amount.Name = "Amount";
+            this.Amount.Size = new System.Drawing.Size(155, 29);
+            this.Amount.TabIndex = 194;
             // 
-            // textBox6
+            // p_name
             // 
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(425, 224);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(247, 29);
-            this.textBox6.TabIndex = 195;
+            this.p_name.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.p_name.Location = new System.Drawing.Point(425, 224);
+            this.p_name.Name = "p_name";
+            this.p_name.ReadOnly = true;
+            this.p_name.Size = new System.Drawing.Size(247, 29);
+            this.p_name.TabIndex = 195;
             // 
-            // textBox7
+            // paymet
             // 
-            this.textBox7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(427, 404);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(155, 29);
-            this.textBox7.TabIndex = 196;
+            this.paymet.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paymet.Location = new System.Drawing.Point(427, 404);
+            this.paymet.Name = "paymet";
+            this.paymet.Size = new System.Drawing.Size(155, 29);
+            this.paymet.TabIndex = 196;
             // 
-            // textBox8
+            // SearchforP
             // 
-            this.textBox8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(338, 68);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(203, 29);
-            this.textBox8.TabIndex = 197;
+            this.SearchforP.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchforP.Location = new System.Drawing.Point(338, 68);
+            this.SearchforP.Name = "SearchforP";
+            this.SearchforP.Size = new System.Drawing.Size(203, 29);
+            this.SearchforP.TabIndex = 197;
             // 
-            // button3
+            // SearchP
             // 
-            this.button3.BackColor = System.Drawing.Color.MediumBlue;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(542, 68);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(85, 29);
-            this.button3.TabIndex = 198;
-            this.button3.Text = "Search";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(603, 298);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 25);
-            this.label1.TabIndex = 199;
-            this.label1.Text = "to";
+            this.SearchP.BackColor = System.Drawing.Color.MediumBlue;
+            this.SearchP.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchP.Location = new System.Drawing.Point(542, 68);
+            this.SearchP.Name = "SearchP";
+            this.SearchP.Size = new System.Drawing.Size(85, 29);
+            this.SearchP.TabIndex = 198;
+            this.SearchP.Text = "Search";
+            this.SearchP.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -304,68 +293,79 @@
             this.label6.TabIndex = 204;
             this.label6.Text = "Transaction Date:";
             // 
-            // dateTimePicker1
+            // Month_fr
             // 
-            this.dateTimePicker1.CustomFormat = "yyyy-MMM-dd";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(425, 297);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(157, 33);
-            this.dateTimePicker1.TabIndex = 205;
-            this.dateTimePicker1.Value = new System.DateTime(2026, 3, 11, 13, 21, 26, 0);
+            this.Month_fr.CustomFormat = "yyyy-MMM-dd";
+            this.Month_fr.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Month_fr.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Month_fr.Location = new System.Drawing.Point(425, 297);
+            this.Month_fr.Name = "Month_fr";
+            this.Month_fr.Size = new System.Drawing.Size(157, 33);
+            this.Month_fr.TabIndex = 205;
+            this.Month_fr.Value = new System.DateTime(2026, 3, 11, 13, 21, 26, 0);
             // 
-            // dateTimePicker2
+            // transdate
             // 
-            this.dateTimePicker2.CustomFormat = "yyyy-MMM-dd";
-            this.dateTimePicker2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(640, 295);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(159, 33);
-            this.dateTimePicker2.TabIndex = 206;
+            this.transdate.CustomFormat = "yyyy-MMM-dd";
+            this.transdate.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.transdate.Location = new System.Drawing.Point(427, 449);
+            this.transdate.Name = "transdate";
+            this.transdate.Size = new System.Drawing.Size(165, 33);
+            this.transdate.TabIndex = 207;
             // 
-            // dateTimePicker3
+            // label1
             // 
-            this.dateTimePicker3.CustomFormat = "yyyy-MMM-dd";
-            this.dateTimePicker3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker3.Location = new System.Drawing.Point(427, 449);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(165, 33);
-            this.dateTimePicker3.TabIndex = 207;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(603, 298);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 25);
+            this.label1.TabIndex = 199;
+            this.label1.Text = "to";
+            // 
+            // Month_to
+            // 
+            this.Month_to.CustomFormat = "yyyy-MMM-dd";
+            this.Month_to.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Month_to.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Month_to.Location = new System.Drawing.Point(640, 295);
+            this.Month_to.Name = "Month_to";
+            this.Month_to.Size = new System.Drawing.Size(159, 33);
+            this.Month_to.TabIndex = 206;
             // 
             // Payment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(836, 518);
-            this.Controls.Add(this.dateTimePicker3);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.transdate);
+            this.Controls.Add(this.Month_to);
+            this.Controls.Add(this.Month_fr);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.SearchP);
+            this.Controls.Add(this.SearchforP);
+            this.Controls.Add(this.paymet);
+            this.Controls.Add(this.p_name);
+            this.Controls.Add(this.Amount);
+            this.Controls.Add(this.s_name);
+            this.Controls.Add(this.classes);
             this.Controls.Add(this.s_no);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.paybtn);
+            this.Controls.Add(this.Dabtn);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.Dabtn);
+            this.Controls.Add(this.paidbtn);
             this.Controls.Add(this.label12);
             this.Name = "Payment";
             this.Text = "Payment";
@@ -376,31 +376,31 @@
 
         #endregion
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button Dabtn;
+        private System.Windows.Forms.Button paidbtn;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Dabtn;
+        private System.Windows.Forms.Button paybtn;
         private System.Windows.Forms.TextBox s_no;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox classes;
+        private System.Windows.Forms.TextBox s_name;
+        private System.Windows.Forms.TextBox Amount;
+        private System.Windows.Forms.TextBox p_name;
+        private System.Windows.Forms.TextBox paymet;
+        private System.Windows.Forms.TextBox SearchforP;
+        private System.Windows.Forms.Button SearchP;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker Month_fr;
+        private System.Windows.Forms.DateTimePicker transdate;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker Month_to;
     }
 }

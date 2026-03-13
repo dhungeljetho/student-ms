@@ -87,7 +87,6 @@ namespace student_ms
                             {
                                 while (reader.Read())
                                 {
-                                    // Assuming you have columns named "Name" and "Age" in your Student_table
                                     int studentId = Convert.ToInt32(reader["Student_Id"]);
                                     int rollno = Convert.ToInt32(reader["Roll_No"]);
                                     string name = reader["Student_Name"].ToString();
