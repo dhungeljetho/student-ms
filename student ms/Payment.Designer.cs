@@ -43,7 +43,6 @@
             this.s_name = new System.Windows.Forms.TextBox();
             this.Amount = new System.Windows.Forms.TextBox();
             this.p_name = new System.Windows.Forms.TextBox();
-            this.paymet = new System.Windows.Forms.TextBox();
             this.SearchforP = new System.Windows.Forms.TextBox();
             this.SearchP = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -55,6 +54,8 @@
             this.transdate = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.Month_to = new System.Windows.Forms.DateTimePicker();
+            this.month = new System.Windows.Forms.ComboBox();
+            this.paymet = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label12
@@ -75,7 +76,7 @@
             this.paidbtn.Location = new System.Drawing.Point(676, 471);
             this.paidbtn.Name = "paidbtn";
             this.paidbtn.Size = new System.Drawing.Size(123, 35);
-            this.paidbtn.TabIndex = 79;
+            this.paidbtn.TabIndex = 8;
             this.paidbtn.Text = "Paid";
             this.paidbtn.UseVisualStyleBackColor = false;
             // 
@@ -152,7 +153,7 @@
             this.Dabtn.Location = new System.Drawing.Point(28, 203);
             this.Dabtn.Name = "Dabtn";
             this.Dabtn.Size = new System.Drawing.Size(123, 35);
-            this.Dabtn.TabIndex = 86;
+            this.Dabtn.TabIndex = 0;
             this.Dabtn.Text = "Dashboard";
             this.Dabtn.UseVisualStyleBackColor = false;
             // 
@@ -163,7 +164,7 @@
             this.paybtn.Location = new System.Drawing.Point(28, 257);
             this.paybtn.Name = "paybtn";
             this.paybtn.Size = new System.Drawing.Size(123, 35);
-            this.paybtn.TabIndex = 87;
+            this.paybtn.TabIndex = 1;
             this.paybtn.Text = "Payment";
             this.paybtn.UseVisualStyleBackColor = false;
             // 
@@ -174,7 +175,8 @@
             this.s_no.Name = "s_no";
             this.s_no.ReadOnly = true;
             this.s_no.Size = new System.Drawing.Size(116, 29);
-            this.s_no.TabIndex = 189;
+            this.s_no.TabIndex = 4;
+            this.s_no.TabStop = false;
             // 
             // classes
             // 
@@ -183,7 +185,8 @@
             this.classes.Name = "classes";
             this.classes.ReadOnly = true;
             this.classes.Size = new System.Drawing.Size(89, 29);
-            this.classes.TabIndex = 190;
+            this.classes.TabIndex = 5;
+            this.classes.TabStop = false;
             // 
             // s_name
             // 
@@ -193,6 +196,7 @@
             this.s_name.ReadOnly = true;
             this.s_name.Size = new System.Drawing.Size(247, 29);
             this.s_name.TabIndex = 191;
+            this.s_name.TabStop = false;
             // 
             // Amount
             // 
@@ -200,7 +204,7 @@
             this.Amount.Location = new System.Drawing.Point(427, 339);
             this.Amount.Name = "Amount";
             this.Amount.Size = new System.Drawing.Size(155, 29);
-            this.Amount.TabIndex = 194;
+            this.Amount.TabIndex = 5;
             // 
             // p_name
             // 
@@ -210,14 +214,7 @@
             this.p_name.ReadOnly = true;
             this.p_name.Size = new System.Drawing.Size(247, 29);
             this.p_name.TabIndex = 195;
-            // 
-            // paymet
-            // 
-            this.paymet.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.paymet.Location = new System.Drawing.Point(427, 404);
-            this.paymet.Name = "paymet";
-            this.paymet.Size = new System.Drawing.Size(155, 29);
-            this.paymet.TabIndex = 196;
+            this.p_name.TabStop = false;
             // 
             // SearchforP
             // 
@@ -225,7 +222,7 @@
             this.SearchforP.Location = new System.Drawing.Point(338, 68);
             this.SearchforP.Name = "SearchforP";
             this.SearchforP.Size = new System.Drawing.Size(203, 29);
-            this.SearchforP.TabIndex = 197;
+            this.SearchforP.TabIndex = 2;
             // 
             // SearchP
             // 
@@ -234,7 +231,7 @@
             this.SearchP.Location = new System.Drawing.Point(542, 68);
             this.SearchP.Name = "SearchP";
             this.SearchP.Size = new System.Drawing.Size(85, 29);
-            this.SearchP.TabIndex = 198;
+            this.SearchP.TabIndex = 3;
             this.SearchP.Text = "Search";
             this.SearchP.UseVisualStyleBackColor = false;
             // 
@@ -298,9 +295,9 @@
             this.Month_fr.CustomFormat = "yyyy-MMM-dd";
             this.Month_fr.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Month_fr.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Month_fr.Location = new System.Drawing.Point(425, 297);
+            this.Month_fr.Location = new System.Drawing.Point(773, 294);
             this.Month_fr.Name = "Month_fr";
-            this.Month_fr.Size = new System.Drawing.Size(157, 33);
+            this.Month_fr.Size = new System.Drawing.Size(10, 33);
             this.Month_fr.TabIndex = 205;
             this.Month_fr.Value = new System.DateTime(2026, 3, 11, 13, 21, 26, 0);
             // 
@@ -312,14 +309,14 @@
             this.transdate.Location = new System.Drawing.Point(427, 449);
             this.transdate.Name = "transdate";
             this.transdate.Size = new System.Drawing.Size(165, 33);
-            this.transdate.TabIndex = 207;
+            this.transdate.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(603, 298);
+            this.label1.Location = new System.Drawing.Point(736, 300);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(31, 25);
             this.label1.TabIndex = 199;
@@ -330,16 +327,56 @@
             this.Month_to.CustomFormat = "yyyy-MMM-dd";
             this.Month_to.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Month_to.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Month_to.Location = new System.Drawing.Point(640, 295);
+            this.Month_to.Location = new System.Drawing.Point(789, 295);
             this.Month_to.Name = "Month_to";
-            this.Month_to.Size = new System.Drawing.Size(159, 33);
+            this.Month_to.Size = new System.Drawing.Size(10, 33);
             this.Month_to.TabIndex = 206;
+            // 
+            // month
+            // 
+            this.month.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.month.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.month.FormattingEnabled = true;
+            this.month.Items.AddRange(new object[] {
+            "January ",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            " July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.month.Location = new System.Drawing.Point(425, 294);
+            this.month.Name = "month";
+            this.month.Size = new System.Drawing.Size(178, 29);
+            this.month.TabIndex = 4;
+            // 
+            // paymet
+            // 
+            this.paymet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.paymet.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paymet.FormattingEnabled = true;
+            this.paymet.Items.AddRange(new object[] {
+            "Cash",
+            "Cheque",
+            "Mobile Banking"});
+            this.paymet.Location = new System.Drawing.Point(425, 406);
+            this.paymet.Name = "paymet";
+            this.paymet.Size = new System.Drawing.Size(178, 29);
+            this.paymet.TabIndex = 6;
             // 
             // Payment
             // 
+            this.AcceptButton = this.paidbtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(836, 518);
+            this.Controls.Add(this.paymet);
+            this.Controls.Add(this.month);
             this.Controls.Add(this.transdate);
             this.Controls.Add(this.Month_to);
             this.Controls.Add(this.Month_fr);
@@ -351,7 +388,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.SearchP);
             this.Controls.Add(this.SearchforP);
-            this.Controls.Add(this.paymet);
             this.Controls.Add(this.p_name);
             this.Controls.Add(this.Amount);
             this.Controls.Add(this.s_name);
@@ -390,7 +426,6 @@
         private System.Windows.Forms.TextBox s_name;
         private System.Windows.Forms.TextBox Amount;
         private System.Windows.Forms.TextBox p_name;
-        private System.Windows.Forms.TextBox paymet;
         private System.Windows.Forms.TextBox SearchforP;
         private System.Windows.Forms.Button SearchP;
         private System.Windows.Forms.Label label2;
@@ -402,5 +437,7 @@
         private System.Windows.Forms.DateTimePicker transdate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker Month_to;
+        private System.Windows.Forms.ComboBox month;
+        private System.Windows.Forms.ComboBox paymet;
     }
 }

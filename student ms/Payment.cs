@@ -61,7 +61,7 @@ namespace student_ms
             }
 
             String connectionString = "Server=127.0.0.1;Port=3306;User ID=root;Password=;Database=Student_ms;";
-            String querry = "SELECT s.Student_Id," +
+            String query = "SELECT s.Student_Id," +
                 "s.Class," +
                 "s.Student_Name," +
                 "s.Guardian_Name" +
@@ -73,7 +73,7 @@ namespace student_ms
                 try
                 {
                     connection.Open();
-                    using (MySqlCommand command = new MySqlCommand(querry, connection))
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@id", SearchforP.Text);
                         using (MySqlDataReader reader = command.ExecuteReader())
@@ -95,16 +95,57 @@ namespace student_ms
                             }
                         }
                     }
-                } catch {
+                }
+                catch
+                {
                     MessageBox.Show("An error occurred while connecting to the database. Please check your connection settings and try again.");
                 }
             }
-             
+
         }
 
         private void Paidbtn_Click(object sender, EventArgs e)
         {
+            String connectionString = "Server=127.0.0.1; Port=3306;User ID=root;Password=;Database=Student_ms;";
+            String query = "INSERT INTO payment_table (" +
+                "Student_id," +
+                "Amount," +
+                "Payment_Month," +
+                "Date_Paid," +
+                "Payment_Method)" +
+                " VALUES (@id,  @amount, @month, @datepaid, @method);";
 
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@id", s_no.Text);
+                        command.Parameters.AddWithValue("@amount", Amount.Text);
+                        command.Parameters.AddWithValue("@month", month.Text);
+                        command.Parameters.AddWithValue("@datepaid", transdate.Value);
+                        command.Parameters.AddWithValue("@method", paymet.Text);
+                        int rowsAffected = command.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Payment recorded successfully.");
+                            ClearAllFields();
+                            SearchforP.Focus();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed to record payment. Please try again.");
+                        }
+                    }
+
+                }
+                catch
+                {
+                    MessageBox.Show("An error occurred while connecting to the database. Please check your connection settings and try again.");
+                }
+            }
         }
     }
 }
