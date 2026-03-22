@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Attenbtn = new System.Windows.Forms.Button();
             this.Dabtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -36,12 +36,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.claassrec = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.transdate = new System.Windows.Forms.DateTimePicker();
+            this.todate = new System.Windows.Forms.DateTimePicker();
             this.Search_cl = new System.Windows.Forms.Button();
-            this.Student_No = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Student_Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Roll_No = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Student_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Attend = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.viewa = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -75,10 +75,10 @@
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Student_No,
+            this.Student_Id,
             this.Roll_No,
             this.Student_Name,
-            this.Attend,
+            this.Status,
             this.viewa});
             this.dataGridView1.Location = new System.Drawing.Point(198, 125);
             this.dataGridView1.Name = "dataGridView1";
@@ -125,15 +125,15 @@
             this.label3.TabIndex = 69;
             this.label3.Text = "Attendance Record";
             // 
-            // transdate
+            // todate
             // 
-            this.transdate.CustomFormat = "yyyy-MMM-dd";
-            this.transdate.Font = new System.Drawing.Font("Segoe UI Semibold", 12.25F, System.Drawing.FontStyle.Bold);
-            this.transdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.transdate.Location = new System.Drawing.Point(240, 81);
-            this.transdate.Name = "transdate";
-            this.transdate.Size = new System.Drawing.Size(165, 29);
-            this.transdate.TabIndex = 70;
+            this.todate.CustomFormat = "yyyy-MMM-dd";
+            this.todate.Font = new System.Drawing.Font("Segoe UI Semibold", 12.25F, System.Drawing.FontStyle.Bold);
+            this.todate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.todate.Location = new System.Drawing.Point(240, 81);
+            this.todate.Name = "todate";
+            this.todate.Size = new System.Drawing.Size(140, 29);
+            this.todate.TabIndex = 70;
             // 
             // Search_cl
             // 
@@ -146,14 +146,14 @@
             this.Search_cl.Text = "Search Class";
             this.Search_cl.UseVisualStyleBackColor = false;
             // 
-            // Student_No
+            // Student_Id
             // 
-            this.Student_No.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Student_No.DataPropertyName = "Student_Id";
-            this.Student_No.HeaderText = "Student No.";
-            this.Student_No.Name = "Student_No";
-            this.Student_No.ReadOnly = true;
-            this.Student_No.Width = 89;
+            this.Student_Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Student_Id.DataPropertyName = "Student_Id";
+            this.Student_Id.HeaderText = "Student No.";
+            this.Student_Id.Name = "Student_Id";
+            this.Student_Id.ReadOnly = true;
+            this.Student_Id.Width = 89;
             // 
             // Roll_No
             // 
@@ -175,19 +175,19 @@
             this.Student_Name.Name = "Student_Name";
             this.Student_Name.ReadOnly = true;
             // 
-            // Attend
+            // Status
             // 
-            this.Attend.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Attend.FillWeight = 39.47369F;
-            this.Attend.HeaderText = "Present";
-            this.Attend.Name = "Attend";
+            this.Status.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Status.FillWeight = 39.47369F;
+            this.Status.HeaderText = "Present";
+            this.Status.Name = "Status";
             // 
             // viewa
             // 
             this.viewa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.MediumBlue;
-            this.viewa.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.MediumBlue;
+            this.viewa.DefaultCellStyle = dataGridViewCellStyle1;
             this.viewa.FillWeight = 39.47369F;
             this.viewa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.viewa.HeaderText = "View";
@@ -202,7 +202,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 518);
             this.Controls.Add(this.Search_cl);
-            this.Controls.Add(this.transdate);
+            this.Controls.Add(this.todate);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.claassrec);
             this.Controls.Add(this.label1);
@@ -226,12 +226,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox claassrec;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker transdate;
+        private System.Windows.Forms.DateTimePicker todate;
         private System.Windows.Forms.Button Search_cl;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Student_No;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Student_Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Roll_No;
         private System.Windows.Forms.DataGridViewTextBoxColumn Student_Name;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Attend;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Status;
         private System.Windows.Forms.DataGridViewButtonColumn viewa;
     }
 }
